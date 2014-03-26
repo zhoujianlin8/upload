@@ -1,0 +1,466 @@
+<!-- 易宝充值 -->
+<div class="content userAuto yibaocharge">
+    <!--nav 二级导航-->
+    <div class="nav2" id="nav_charge_step">
+        <ul class="clearFix">
+            <li class="cur"><a href="###" class="png">1.填写充值信息</a><i class="png"></i></li>
+            <li><a href="###" class="png">2.确定订单信息</a><i class="png"></i></li>
+            <li><a href="###" class="png">3.在易宝完成支付</a><i class="png"></i></li>
+            <li><a href="###" class="png">4.充值成功</a></li></ul>
+    </div>
+    <!--nav 二级导航 end-->
+    <!--填写信息页面-->
+	<div class="CardPassword" id="div_step_1">
+        <form id="form_step_1">
+    		<div class="top"></div>
+    		<div class="middle">
+    			<div class="accountNumber">
+                    <i class="greenLabel png">充值帐号</i>
+                    <div class="formRow">
+                        <div class="formLeft dv">帐号：</div>
+                        <div class="formRight dv">
+                            <input type="text" id="txt_account" placeholder="请输入您的帐号..." class="longInput dv" />
+                            <span></span>
+                            <!-- <span class="real dv"><i class="ico_16 i34"></i></span>
+                            <span class="error dv" style="display:none"><i class="ico_16 i33"></i>改帐号不存在</span> -->
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLeft di">昵称：</div>
+                        <div class="formRight di">
+                            <p class="orange" id="span_cards_nickname">花雨大猫</p>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLeft di"></div>
+                        <div class="formRight di">
+                            <label for="Top-tips">
+                                <input type="checkbox" id="Top-tips" class="dv"/>
+                                <span class="fs12 dv">在帮<span class="orange">TA</span>充值？给<span class="orange">TA</span>带句话吧：</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLeft di fl">留言：</div>
+                        <div class="formRight di">
+                            <div class="messageBox">
+                                <div class="bdBox">
+                                    <textarea id="txt_message" placeholder="请输入你想对TA说的话，充值成功后会通知到TA,最 多50字哦~"></textarea>
+                                    <div class="field">
+                                        <span>签名：</span>
+                                        <input type="text" class="orange" />
+                                    </div>
+                                </div>
+                            <div class="selector">
+                                <i class="arrow png" id="btn_commonly_words"></i>
+                                <div class="seltTit">常用段子</div>
+                                <div class="dropBox" id="div_commonly_words" style="display:none;">
+                                    <ul class="dropList">
+                                        <li data-val="帕拉拉啦一段话">死皮赖脸</li>
+                                        <li data-val="魅惑撒娇sdf">魅惑撒娇</li>
+                                        <li data-val="救命啊">江湖救急</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    		</div>
+    		<div class="bottom png"></div>
+    		<div class="chargeMany png">
+                <div class="top"></div>
+                <div class="middle">
+                    <div class="chargeManyLabel">
+                        <i class="orangeLabel png">充值额度</i>
+                    </div>
+                    <div class="moneyList">
+                        <ul class="clearFix" id="ul_money_list">
+                            <li>
+                                <div class="moneyInfo moneyGreen png">
+                                    <p><strong>10</strong><b>元宝</b></p>
+                                    <p>=10元人民币</p>
+                                    <div class="checked png" data-money="10"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="moneyInfo moneyGreen png">
+                                    <p><strong>20</strong><b>元宝</b></p>
+                                    <p>=20元人民币</p>
+                                    <div class="checked png hide" data-money="20"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="moneyInfo moneyGreen png">
+                                    <p><strong>30</strong><b>元宝</b></p>
+                                    <p>=30元人民币</p>
+                                    <div class="checked png hide" data-money="30"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="moneyInfo moneyYellow png">
+                                    <p><strong>50</strong><b>元宝</b></p>
+                                    <p>=50元人民币</p>
+                                    <div class="checked png hide" data-money="50"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="moneyInfo moneyRed png">
+                                    <p><strong>100</strong><b>元宝</b></p>
+                                    <p>=100元人民币</p>
+                                    <div class="checked png hide" data-money="100"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="moneyInfo moneyOrange png">
+                                    <p class="otherMoney">其他额度</p>
+                                    <div class="checked png hide" data-money="0"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom clearFix">
+                    <div class="fl ">
+                        <span>购买数量:</span>
+                        <input type="text" class="png" id="txt_yuanbao"/>
+                        <span>元宝</span>
+                    </div>
+                    <div class="fr">
+                        <span>金额:</span>
+                        <b class="orange" id="span_total_money">10</b>
+                        <span>元</span>
+                    </div>
+                </div>
+                <input type="hidden" name="yuanbao" id="txt_charge_yuanbao" value="10">
+    		</div>
+    		<div class="nextBtn textC">
+    			<a href="###" class="png" id="btn_step_1">下一步</a>
+    		</div>
+        </form>
+	</div>
+    <!--填写信息页面 end-->
+    <!--确定订单信息页面 -->
+    <div class="confirmOrder CardPassword hide" id="div_step_2">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="chargeManyLabel">
+                <i class="orangeLabel png">订单信息</i>
+                <a href="###" class="goBack png" data-goback=true>返回修改</a>
+            </div>
+            <div class="table">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td class="first">充值方式:</td>
+                        <td class="last">易宝支付</td>
+                    </tr>
+                    <tr class="even">
+                        <td class="first">充值账号:</td>
+                        <td class="last">545463</td>
+                    </tr>
+                    <tr>
+                        <td class="first">昵称:</td>
+                        <td class="orange last">易宝支付</td>
+                    </tr>
+                    <tr class="even">
+                        <td class="first">充值所得:</td>
+                        <td class="last">50元宝</td>
+                    </tr>
+                    <tr>
+                        <td class="first">充值金额:</td>
+                        <td class="orange last">50元</td>
+                    </tr>
+                    <tr class="even">
+                        <td class="first">订单编号:</td>
+                        <td class="last">526+56+56</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="nextBtn textC">
+            <a href="###" class="png" id="btn_step_2">确认提交</a>
+        </div>
+    </div>
+    <!--确定订单信息页面 end-->
+    <!--完成支付页面-->
+    <div class="CardPasswordSuccess overPlay hide" id="div_step_3">
+        <div class="top png"></div>
+        <div class="middle png">
+            <div class="msg textC">
+                <div class="">请在弹出的<span class="orange">易宝支付</span>页面完成支付</div>
+                <i></i>
+                <p><b>付款遇到了问题？</b></p>
+                <a href="##" class="orange">重新弹出支付页面</a>
+            </div>
+        </div>
+        <div class="bottom png"></div>
+        <div class="playBtn">
+            <div class="nextBtn textC">
+                <a href="###" class="png" id="btn_step_3">已完成付款</a>
+            </div>
+            <a href="###" class="backChange" data-goback=true>返回修改订单</a>
+        </div>
+    </div>
+    <!--完成支付页面end-->
+    <!--充值成功页面-->
+	<div class="CardPasswordSuccess hide" id="div_step_4">
+		<div class="top png"></div>
+		<div class="middle png">
+			<div class="successContent">
+				<i></i>
+				<p>
+					<span class="orange">kpch8779(花雨大猫）</span>已成功冲入<span class="orange">50</span>元宝
+				</p>
+			</div>
+			<div class="nextBtn textC">
+				<a href="###" class="png" id="btn_step_4">我还要再充一笔</a>
+			</div>
+		</div>
+		<div class="bottom png"></div>
+		<div class="buyProps png">
+			<a href="###" class="buyBtn fr png">道具商城</a>
+			<ul>
+				<li>
+					<div class="left fl">
+						<a href="###">
+							<img src="../images/props_1.png" />
+						</a>
+					</div>
+					<div class="right">
+						<p><a href="###" class="orange">负分清零</a></p>
+						<p>价格：<span>10元宝</span></p>
+						<p>赠送：<span>100万银子</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="left fl">
+						<a href="###">
+							<img src="../images/props_1.png" />
+						</a>
+					</div>
+					<div class="right">
+						<p><a href="###" class="orange">负分清零</a></p>
+						<p>价格：<span>10元宝</span></p>
+						<p>赠送：<span>100万银子</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="left fl">
+						<a href="###">
+							<img src="../images/props_1.png" />
+						</a>
+					</div>
+					<div class="right">
+						<p><a href="###" class="orange">负分清零</a></p>
+						<p>价格：<span>10元宝</span></p>
+						<p>赠送：<span>100万银子</span></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <!--充值成功end-->
+</div>
+<!-- 易宝充值End -->
+
+<script type="text/javascript">
+$(function() {
+    var ui = {
+        $nav_charge_step: $('#nav_charge_step'),
+        $txt_account: $('#txt_account'),
+        $div_commonly_words: $('#div_commonly_words'),
+        $btn_commonly_words: $('#btn_commonly_words'),
+        $txt_message: $('#txt_message'),
+        $ul_money_list: $('#ul_money_list'),
+        $span_total_money: $('#span_total_money'),
+        $txt_yuanbao: $('#txt_yuanbao'),
+        $txt_charge_yuanbao: $('#txt_charge_yuanbao'),
+        $btn_step_1: $('#btn_step_1'),
+        $form_step_1: $('#form_step_1'),
+        $btn_retun_step1: $('[data-goback=true]'),
+        $btn_step_2: $('#btn_step_2'),
+        $btn_step_3: $('#btn_step_3'),
+        $btn_step_4: $('#btn_step_4')
+    };
+
+    var oPage = {
+        init: function() {
+            this.view();
+            this.bindEvent();
+        },
+        view: function() {
+
+        },
+        bindEvent: function() {
+            var self = this;
+            $('body').on('click', function() {
+                ui.$div_commonly_words.hide();
+            });
+            // 常用语
+            ui.$btn_commonly_words.on('click', function() {
+                ui.$div_commonly_words.show();
+                return false;
+            });
+            ui.$div_commonly_words.on('click', 'li', function() {
+                var val = $(this).data('val');
+                ui.$txt_message.val(val);
+            });
+            // 账号
+            ui.$txt_account.on('blur', function() {
+                self.fValidAccount();
+            });
+            // 选择充值额度
+            ui.$ul_money_list.on('click', 'li', function() {
+                var $this = $(this),
+                    $this_money = $this.find('div[data-money]');
+                var index = $this.index();
+                if(index != 5) {
+                    self.fShowTotalMoney($this_money.data('money'));
+                } else {
+                    self.fShowTotalMoney(ui.$txt_yuanbao.val());
+                }
+                $this_money.removeClass('hide')
+                        .end().siblings('li').find('div[data-money]').addClass('hide');
+
+            });
+            // 元宝输入限制
+            ui.$txt_yuanbao.on('keydown', function(e) {
+                var k = window.event ? e.keyCode : e.which;
+                if (((k >= 48) && (k <= 57)) || ((k >= 96) && (k<=105)) || k == 8 || k == 0 || k == 37 ||k == 39) {
+                } else {
+                    if (window.event) {
+                        window.event.returnValue = false;
+                    } else {
+                        e.preventDefault(); //for firefox 
+                    }
+                }
+            }).on('input', function() {
+                self.fShowTotalMoney($(this).val());
+            });
+            // 步骤一  提交，下一步
+            ui.$btn_step_1.on('click', function() {
+                if(self.fValidForm()) {
+                    self.fAjaxSubmitStep1();
+                }
+            });
+            // 步骤二，返回修改
+            ui.$btn_retun_step1.on('click', function() {
+                self.fSetChargeStep(0);
+            });
+            // 步骤二，确认提交
+            ui.$btn_step_2.on('click', function() {
+                self.fSetChargeStep(2);
+            });
+            // 步骤三，确认提交
+            ui.$btn_step_3.on('click', function() {
+                self.fSetChargeStep(3);
+            });
+            // 步骤四，再充一笔
+            ui.$btn_step_4.on('click', function() {
+               self.fSetChargeStep(0); 
+            })
+        },
+        fSetChargeStep: function(index) {
+            ui.$nav_charge_step.find('li').eq(index).addClass('cur').siblings().removeClass('cur');
+            var step = index + 1;
+            for(var i=1;i<=4;i++) {
+                var id = 'div_step_' + i;
+                if(step == i) {
+                    $('#' + id).removeClass('hide');
+                } else {
+                    $('#' + id).addClass('hide');
+                }
+            }
+        },
+        fValidSuccess: function($obj) {
+            $obj.next('span').replaceWith('<span class="real dv"><i class="ico_16 i34"></i></span>');
+        },
+        fValidError: function($obj, content) {
+            $obj.next('span').replaceWith('<span class="error dv"><i class="ico_16 i33"></i>'+content+'</span>');
+        },
+        fValidWait: function($obj) {
+            $obj.next('span').hide();
+        },
+        fValidAccount: function(async) {
+            var b = true;
+            var val = ui.$txt_account.val();
+            if(val == '') {
+                this.fValidError(ui.$txt_account, '请输入账号');
+                b = false;
+            } else {
+                this.fValidWait(ui.$txt_account);
+                this.fAjaxAccount(async);
+            }
+            return b;
+        },
+        // 异步校验账号
+        fAjaxAccount: function(async) {
+            var b = false;
+            var bAsync = async == undefined ? true : async;
+            var self = this;
+            var url='?c=charge&a=checkAccount';
+            var data={account: ui.$txt_account.val()};
+            $.post(url,data,function(msg){
+                if(!msg.code){
+
+                }else{
+                    alert(msg)
+                }
+            },'json')
+            // $.ajax({
+            //  type:'post',
+            //  url:'XXX',
+            //  data:{},
+            //  async:bAsync,
+            //  success:function(data) {
+            //      if(data.code == 0) {
+            //          self.fValidSuccess(ui.$txt_account);
+            //          b = true;
+            //      } else {
+            //          self.fValidError(ui.$txt_account, '帐号不存在');
+            //          b = false;
+            //      }
+            //  }
+            // });
+            b = true;   //调试
+            return b;
+        },
+        fValidChargeMoney: function() {
+            var b = true;
+        },
+        // 显示金额
+        fShowTotalMoney: function(yb) {
+            ui.$span_total_money.text(yb);
+            ui.$txt_charge_yuanbao.val(yb);
+        },
+        // 提交第一步表单
+        fAjaxSubmitStep1: function() {
+            var self = this;
+            // ui.$form_step_1.ajaxSubmit({
+            //     type:'post',
+            //     url:'step1XXXX',
+            //     success:function(data) {
+            //         if(data.code == 0) {
+            //             self.fSetChargeStep(1);
+            //         } else {
+
+            //         }
+            //     }
+            // });
+            self.fSetChargeStep(1); //调试
+        },
+        fValidForm: function() {
+            if(ui.$txt_charge_yuanbao.val() == '') {
+                alert('请选择充值元宝数量');
+                return false;
+            }
+            return this.fValidAccount(false);
+        },
+
+    }
+
+    oPage.init();
+})
+</script>

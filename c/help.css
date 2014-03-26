@@ -1,0 +1,161 @@
+.helpSide{width: 230px;}
+/* 帮助中心 */
+.helpCenter{width: 230px;background: #594a41;margin-bottom: 10px;}
+.helpCenterHd{width: 230px;height: 48px;background: url(../i/helpCenterHdBg.png) no-repeat;text-indent: -9999px;}
+.helpCenterCont{width: 230px;}
+.helpCenterCont li{
+	width: 230px;height: 59px;
+	border-top: 1px solid #7d6a5f;
+	border-bottom: 1px solid #372a23;
+	font: 16px/59px Microsoft Yahei;
+	text-align: center;
+}
+.helpCenterCont .first{border-top: 0;}
+.helpCenterCont .last{border-bottom: 0;}
+.helpCenterCont a{display: inline-block;width: 230px;height: 59px;color: #fc9;}
+.helpCenterCont a:hover{text-decoration: none;}
+.helpCenterCont .current{background: url(../i/helpCurrentBg.png) no-repeat;color: #300;}
+
+/* 自助问答 联系客服 */
+.answers{width: 230px;background: #3a2c25;margin-bottom: 10px;}
+.answersHd{
+	position: relative;
+	background: url(../i/helpAnswersHdBg.png) no-repeat;
+	width: 220px;height: 38px;
+	padding-left: 10px;
+	font: 16px/38px Microsoft Yahei;
+	color: #ce9547;
+}
+.answersHd i{
+	position: absolute;
+	left: 0; top: 35px;
+	display: inline-block;
+	width: 12px;height: 12px;
+	background: url(../i/helpAnswersHdBgi.png) no-repeat;
+}
+.answersCont{width: 228px;border: 1px solid #483125; border-top: 0;}
+.answersCont li{
+	width: 188px;
+	padding: 10px 20px 5px 20px;
+	border-top: 1px solid #4a3a30;
+	border-bottom: 1px solid #291a17;
+}
+.answersCont .first{border-top: 0;}
+.answersCont .last{border-bottom: 0;}
+.answersCont .even{background: #43342c;}
+.answersCont h4{
+	height: 35px;
+	margin-bottom: 5px;
+	font: 14px/35px Microsoft Yahei;
+	color: #eed8c1;
+}
+.answersCont a,.answersCont a:visited{color: #eed8c1;}
+.answersCont .pic{width: 33px;height: 33px;margin-right: 10px;}
+.answersCont p{font: 12px/20px simsun;color: #c96;}
+.answersCont .qqChat{
+	display:block;
+	margin-bottom:5px;
+	background: url(../i/qqAdviceBtn.png) no-repeat;
+    width: 81px;height: 23px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contact01, .contact02, .contact03{
+	background: url(../i/helpContact01.png) no-repeat left center;
+	padding-left: 45px;
+	height: 38px;
+	line-height: 38px;
+}
+.contact02{background: url(../i/helpContact02.png) no-repeat left center;}
+.contact03{background: url(../i/helpContact03.png) no-repeat left center;}
+.contactP{font: 22px/30px simsun;color: #c96;}
+
+/* 内容 */
+.helpContWrap{
+	margin-left: 240px;
+	width: 720px;
+	_float: right;
+	_margin: 0;
+}
+
+.helpContTop{}
+.helpNewsTop{width: 720px;height: 15px;overflow: hidden;background: url(../i/helpNewsTopBg.png) no-repeat;}
+.helpNewsMiddleW{width: 720px;background: url(../i/helpNewsMiddleBg.png) repeat-y;overflow: hidden;}
+.helpNewsMiddle{width: 730px;background: url(../i/helpNewsMiddle.png) no-repeat;padding: 0 15px;display: inline-block;}
+.helpNewsMiddle li{
+	float: left;
+	width: 220px;height: 26px;overflow: hidden;
+	margin:0 20px 0 0;
+	font: 12px/26px simsun;
+}
+.helpNewsMiddle a{
+	color: #ffe3c7;
+	background: url(../i/helpTopli.png) no-repeat left center;
+	padding-left: 10px;
+}
+.helpNewsMiddle a:hover{
+	color: #ffb265;
+	background: url(../i/helpTopliHover.png) no-repeat left center;
+	text-decoration: none;
+}
+
+.helpNewsBottom{width: 720px;height: 40px;background: url(../i/helpNewsBottomBg.png) no-repeat;}
+
+.helpContMiddle{
+	background: url(../i/helpContMiddleBg.png) repeat-y;
+	width: 700px;
+	padding: 0 10px 30px;
+}
+.helpContBottom{width: 720px;height: 17px;background: url(../i/helpContBottomBg.png) no-repeat;}
+
+.helpContHd{
+	background: #f3e4d0;
+	width: 670px;height: 30px;
+	padding-left: 30px;
+	font: 16px/30px Microsoft Yahei;
+	color: #300;
+}
+
+/* 奖励方式 */
+.award{position: relative;}
+.award .helpContHd{position: absolute;left: 0;top: -10px;}
+.awardCont{padding: 30px;}
+.award h4{font: 14px/30px simsun; color: #630;margin-bottom: 10px;}
+.award .table{width: 520px;font: 14px/20px simsun; color: 300;}
+.award .table th,.award .table td{
+	width: 220px;
+	padding: 5px 20px;
+	border: 1px solid #dec8ae;
+}
+.award .table th{text-align: center;background: #fdf0df;}
+.award .table td{font-size: 12px;}
+.award .table .col{background: #fdf0df;}
+
+/* 推广方式 */
+.spread{}
+.spreadCont{padding: 10px 30px;}
+.spreadCont p{font: 14px/30px simsun; color: #4b2500;}
+.spreadCont .pic{padding: 10px 0;}
+.spreadCont span{
+	display: inline-block;
+	text-indent: 20px;
+	color: #291a17;
+	margin-right: 15px;
+	vertical-align: top;
+}
+
+/* 回到顶部 */
+.backToTop {
+    display: none;
+    background: url(../i/backTopBg.png) no-repeat 0 0;
+    width: 53px;height: 53px;overflow: hidden;
+    position: fixed;
+    _position: absolute;
+    right: 20px;
+    bottom: 355px;
+    _bottom: "auto";
+    cursor: pointer;
+}
+.backToTop:hover{background: url(../i/backTopBg.png) no-repeat 0 -55px;}

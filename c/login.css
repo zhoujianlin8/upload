@@ -1,0 +1,85 @@
+[autofocus],[placeholder] {behavior: url(../c/textbox.htc);}
+
+::-webkit-input-placeholder{color:#c3ae87;}
+input:-moz-placeholder{color: #c3ae87;}
+input-placeholder{color: #c3ae87;}
+
+/* subHead */
+.subHead{background:url(../i/subHeadBg.png) repeat-x;height: 95px;width: 100%;position: relative;}
+.subLogo{width: 179px;height: 69px;margin-top: 2px;}
+.subHead .wrap{position: relative;}
+.subHead .loginArea{
+	background: #4f3b28;
+	border: 1px solid #7b6550;
+	border-radius:3px;
+	top: 12px;
+	height: 33px;
+	width: auto;
+	padding: 0 10px;
+	margin-top: 12px;
+}
+.subHead .loginArea a:hover{text-decoration: none;}
+.subHead .loginArea .dv small{color:#d3a87d;}
+.subHead .loginArea .lineSpace{background: url(../i/subHeadLine.png) no-repeat;width: 2px;height: 28px;margin: 0 5px;}
+.alreadyLogin .ico{background:url(../i/subUserIco.png) no-repeat;width:20px;height: 22px;cursor: pointer;}
+.alreadyLogin .name{color: #deb184;cursor: pointer;}
+
+/* 登录图片 */
+.banner_pic,.banner_pic img{width: 562px;height: 448px;}
+
+/* 主要登录区 */
+.main{width: 394px;}
+.main p{color: #f0cc87;}
+.mainLogin{
+	position: relative;
+	padding-top: 70px;
+	width: 393px;height: 231px;
+	background: url(../i/loginBg.png) no-repeat;
+}
+
+.mainLogin .titInfo{
+	position: absolute;
+	top:50px;left:136px;
+	width: 240px;height: 24px;line-height: 24px;
+	color: #ff4115;
+}
+.warn{width: 16px;height: 16px;background: url(../i/ico_16.png) -250px -450px no-repeat;}
+.ok{width: 16px;height: 16px;background: url(../i/ico_16.png) -200px -450px no-repeat;margin-left: 5px;}
+
+.mainLogin .first{height:134px;padding-top: 26px;}
+.mainLogin .first .titInfo{top:74px;}
+.mainLogin .first .verification{display: none;}
+.mainLogin .change{height: 160px;padding: 0;}
+.mainLogin .change .titInfo{top:50px;}
+.mainLogin .change .verification{display:block;}
+
+.mainLogin .formRow{overflow: hidden;*zoom:1;padding: 10px 0;*padding: 9px 0;}
+.mainLogin .formLeft{
+	width: 130px;height: 31px;
+	line-height: 31px;
+	font-size: 14px;color: #330000;
+	text-align:right;
+}
+.mainLogin .formRight{margin-left: 135px;}
+.mainLogin .formRight .loginLong{
+	padding-left:6px;
+	width: 180px;height: 31px;
+	border: none;
+	*line-height: 31px;
+	line-height: 31px\9;
+	background: url(../i/loginLongInput.png) no-repeat;
+}
+.mainLogin .formRight .loginShort{
+	padding-left:6px;
+	width:54px;height: 31px;
+	border: none;
+	line-height: 31px;
+	background: url(../i/loginShortInput.png) no-repeat;
+}
+.mainLogin .formRight .code,.mainLogin .formRight .code img{width:72px;height: 30px;}
+.mainLogin .formRight .code{margin-left: 10px;*margin:0 5px;}
+
+
+
+
+

@@ -1,0 +1,175 @@
+/* banner */
+.banner{
+	position: relative;
+	background: url(../i/downBannerBg.png) no-repeat;
+	width: 940px;height: 280px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.banner .pic{
+	width: 938px;height: 278px;
+	border: 1px solid #442d29;
+	border-radius: 5px;
+}
+.banner .pic img{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.downLoad{
+	position: absolute;
+	top: 11px;right: 25px;z-index: 500;
+	background: url(../i/downLoadBg.png) no-repeat;
+	width: 236px;height: 278px;
+}
+.downLoad a.retrench, .downLoad a.intact{
+	position: absolute;
+	left: 22px;top: 65px;
+	display: inline-block;
+	/*background: url(../i/downRetrench.png) no-repeat;*/
+	background: url(../i/btn.png) 0 0 no-repeat;
+	width: 193px;height: 55px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+.downLoad a.intact{
+	top: 155px;
+	background: url(../i/btn.png) 0 -455px no-repeat;
+}
+.downLoad a.retrench:hover{background: url(../i/btn.png) -195px 0 no-repeat;}
+.downLoad a.intact:hover{background: url(../i/btn.png) -195px -455px no-repeat;}
+
+
+/* 下载地址 */
+.downBottom{margin-bottom: 10px;}
+.downWay{
+	background: url(../i/downWayBg.png) repeat-x #f7efd8;
+	width: 634px;
+	padding: 20px 25px 20px 30px;
+	overflow: hidden;
+}
+.downWayHd{
+	width: 634px;
+	height: 34px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #a07631;
+	color: #300;
+	font: 500 16px/32px Microsoft yahei;
+}
+.downWay .site{width: 634px;}
+.downWay .site a{
+	display: inline-block;
+	width: 150px;
+	height: 52px;
+	margin: 0 5px 20px 0;
+	background: url(../i/downBg.png) no-repeat;
+	color: #300;
+	font: 14px/52px Microsoft yahei;
+	text-align: center;
+	_padding-top: 15px;
+	_margin: 0 3px 6px 0;
+}
+.downWay .site a:hover{
+	background: url(../i/downBgH.png) no-repeat;
+}
+.downWay .site b{
+	display: inline-block;
+	width: 22px;
+	height: 21px;
+	margin-right: 5px;
+	background: url(../i/downBBg.png) no-repeat center center;
+	vertical-align: middle;
+}
+
+/* 特色说明 */
+.explain{width: 960px;}
+.explainHd{
+	background: url(../i/downExplainHdBg.png) no-repeat;
+	width: 930px;height: 35px;
+	font: 16px/34px Microsoft yahei;
+	color: #fc9;
+	padding-left: 30px;
+}
+.explainMain{
+	background: #edece8;
+	width: 958px;
+	border: 1px solid #5c4f46;
+}
+.explainMain .white{background: #fff;}
+.explainMain .cont{padding:28px 30px;}
+.explainMain .text{
+	width: 325px;
+	padding: 130px 0 0;
+}
+.explainMain .text h2{
+	margin-bottom: 25px;
+	font: 700 26px/30px Microsoft yahei;
+	text-align: center;
+}
+.explainMain .text p{
+	color: #401110;
+	font: 14px/24px simsun;
+}
+.explainMain .saffron{color: #ff790f;}
+.explainMain .ico1{
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	margin-right: 10px;
+	background: url(../i/downIco1.png) no-repeat;
+	vertical-align: middle;
+	*vertical-align: bottom;
+}
+.explainMain .ico2{
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	margin-right: 10px;
+	background: url(../i/downIco2.png) no-repeat;
+	vertical-align: middle;
+}
+.explainMain .ico3{
+	display: inline-block;
+	width: 25px;
+	height: 28px;
+	margin-right: 10px;
+	background: url(../i/downIco3.png) no-repeat;
+	vertical-align: top;
+}
+.explainMain .ico4{
+	display: inline-block;
+	width: 32px;
+	height: 25px;
+	margin-right: 10px;
+	background: url(../i/downIco4.png) no-repeat;
+	vertical-align: middle;
+}
+.explainMain .pic{width: 550px;}
+
+/* 新手上路指南 */
+.guide{
+	width: 237px;height: 198px;
+	padding: 11px 12px;
+	background: url(../i/downGuideBg.png) no-repeat #5c4f46;
+}
+.guideCont{
+	background: #f7efd8;
+	padding:0 6px;
+	width: 225px;height: 198px;
+}
+.guideHd{
+	font: 700 16px/30px Microsoft yahei;
+	border-bottom: 1px solid #401110;
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+.guideUl{margin-left: 15px;}
+.guideUl li a{
+	display: inline-block;
+	background: url(../i/downLiBg.png) no-repeat left center;
+	padding-left: 15px;
+	font: 12px/26px Microsoft yahei;
+	color: #653303;
+}
+
+

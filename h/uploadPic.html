@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>头像上传</title>
+<link href="../c/reset.css" rel="stylesheet" type="text/css" media="all">
+<link href="../c/base.css" rel="stylesheet" type="text/css" media="all">
+<link href="../c/personalCenter.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body style="background: none;">
+<div class="uploadPic">
+    <form action="#" method="get" enctype="multipart/form-data">
+    <header>
+        <button class="graybtn14035 di">上传头像</button>
+        <input  class="btn" type="file" value="上传头像" accept="image/gif, image/jpeg, image/png, image/jpg"/>
+        <button class="btn hide">普通模式上传</button>
+         <p class="accept">支持JPG、GIF、PNG格式，文件不大于4M</p>
+    </header>
+    <section class="clearFix">
+        <div class="cropper fl">
+            <canvas id="cropper" width="300px" height="300px"></canvas>
+            <div class="rangeL"><input type="range" min="1" max="2" value="1" step="0.2" ><i></i></div>
+        </div>
+        <div class="fl linear">
+            <div class="notice">您上传的头像需要生成两种尺寸，<span class="orange"> 请注意下列尺寸的头像是否清晰</span></div>
+            <div class="square fl">
+                <canvas id="squarePic" width="180" height="180" class="pointer"></canvas>
+                <div class="size">180*180</div>
+            </div>
+           <div class="rect fl">
+               <canvas id="rectPic" width="110" height="142" class="pointer"></canvas>
+               <div class="size">110*142</div>
+           </div>
+        </div>
+    </section>
+    <footer><button class="btn" type="submit" disabled>生成头像<img src="../i/1.gif" class="hide"/></button></footer>
+    </form>
+</div>
+<script type="text/javascript" src="../j/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../j/imagecropper2.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(window).load(function(){
+            var cropper;
+            cropper = new ImageCropper({cropper:"cropper",square:"squarePic",rect:"rectPic",notSupport:notSupport,url:"upload.php",callback:function(msg){
+               var $submit= $('[type=submit]');
+                $submit.find("img").addClass("hide");
+                if(msg){
+                    alert("您的头像已上传成功置");
+
+                }else{
+                    $submit.attr("disabled",false);
+                    alert("对不起您的头像生成失败")
+                }
+            }});
+            function notSupport(){
+                $(".uploadPic").remove();
+            }
+       })
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+.content404{
+	background: url(../i/404ContentBg.png) no-repeat;
+	width: 365px;height: 267px;
+	margin: 100px 0 100px 100px;
+	padding-left: 435px;
+}
+.content404 h2{
+	padding: 78px 0 0 0;
+	margin-bottom: 10px;
+	font: 18px/30px Micsoft Yahei;
+	color: #ff911a;
+}
+.content404 h4{font: 16px/30px Micsoft Yahei;color: #449d28;}
+.content404 a{font: 14px/30px Micsoft Yahei;color: #f0cc87;}
+
+
+.errotPrompt , .greatPrompt{
+	background: url(../i/404errorBg.png) no-repeat;
+	padding-top: 65px;
+	width: 600px;
+	margin: 100px auto;
+}
+.errotPrompt h2{
+	font: 18px/30px Micsoft Yahei;
+	color: #ff911a;
+	padding:0 0 10px;
+	border-bottom: 1px solid #5c452c;
+	margin:0 0 15px;
+}
+.errotPrompt h4{font: 16px/30px Micsoft Yahei;color: #449d28;}
+.errotPrompt a{font: 14px/30px Micsoft Yahei;color: #d1aa5c;}
+
+.greatPrompt{background: url(../i/404greatBg.png) no-repeat;}
+.greatPrompt a{font-size: 16px;text-decoration: underline;}
+
+
+
+
+

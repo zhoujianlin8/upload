@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<link href="../c/reset.css" rel="stylesheet" type="text/css" media="all">
+<link href="../c/base.css" rel="stylesheet" type="text/css" media="all">
+<link href="../c/personalCenter.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+<div class="subHead png">
+	<div class="wrap">
+	<!-- 头部内容 -->
+		<!-- logo -->
+		<div class="subLogo fl png"></div>
+		<!-- logo End -->
+		<!-- 登录区 -->
+		<div class="loginArea png">
+			<ul class="dv login" style="display:none;">
+				<li><a href="###">登录</a><small>|</small></li>
+				<li><a href="###">注册</a></li>
+			</ul>
+			<span class="alreadyLogin">
+				<a href="###">
+					<i class="ico dv"></i>
+					<span class="dv name">花语大猫</span>
+				</a>
+			</span>
+			<i class="dv lineSpace png"></i>
+			<ul class="dv">
+				<li><a href="###">帮助中心</a><small>|</small></li>
+				<li><a href="###">设为首页</a><small>|</small></li>
+				<li><a href="###">加入收藏</a></li>
+			</ul>
+		</div>
+		<!-- 登录区End -->
+	</div>
+	<!-- 头部内容End -->
+</div>
+<!-- 主要内容 -->
+<div class="personalContent">
+	<!-- 侧边栏 -->
+	<div class="side">
+		<a href="###" class="homeBtn di">我的主页</a>
+		<ul>
+			<li class="titHd">
+				<i class="ico_16"></i><span class="dv">玩家账户信息</span>
+			</li>
+			<li>
+				<a href="###">我的道具</a>
+			</li>
+			<li class="cur">
+				<a href="###">财富记录</a>
+			</li>
+			<li>
+				<a href="###">推广奖励</a>
+			</li>
+		</ul>
+		<ul class="setUp">
+			<li class="titHd">
+				<i class="ico_16"></i><span class="dv">管理设置</span>
+			</li>
+			<li>
+				<a href="###">资料编辑</a>
+			</li>
+			<li>
+				<a href="###">修改头像</a>
+			</li>
+			<li>
+				<a href="###">修改密码</a>
+			</li>
+			<li>
+				<a href="###">安全设置</a>
+			</li>
+		</ul>
+		<div class="btnSet">
+			<a href="###" class="rapidRecharge di"></a>
+			<a href="###" class="openHall di"></a>	
+		</div>
+	</div>
+	<!-- 侧边栏End -->
+	<!-- 主体内容 -->
+	<div class="main">
+		<!-- 主体内容头 -->
+		<div class="mainHd png">
+			<i class="ico_16"></i>
+			<span class="dv">游戏</span>><span class="dv">欢乐斗地主</span>><span class="dv">个人中心</span>
+		</div>
+		<!-- 主体内容头End -->
+		<!-- 管理设置 -->
+		<div class="mainBd">
+			<!-- 安全设置 -->
+			<div class="securityBinding">
+				<div class="tab" id="tab">
+					<ul>
+						<li class="cur">1.安全验证</li>
+						<li>2.输入新邮箱</li>
+						<li class="last">3.修改成功</li>
+					</ul>
+				</div>
+				<div class="tabc">
+                    <form action="">
+					<div class="formRow">
+						<div class="formLeft fl">您已绑定的邮箱号码：</div>
+						<div class="formRight">
+							<input type="text" class="longInput dv" name="email"/>
+							<span class="tipInfo"></span>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft fl">&nbsp;</div>
+						<div class="formRight">
+							<a href="###" class="bigBtn di png">免费发送验证码</a>
+							<a href="###" class="disabledBtn di png hide">再次发送<span>59</span>秒</a>
+							<a href="###" class="orange" data-toggle='toggle' data-target="#layout1">没收到？</a>
+							<div class="securityIbox hide" style="top:-70px;" id="layout1">
+								<div class="top png"></div>
+								<div class="middle">
+									<p>1.请先检查是否在垃圾邮件中。</p>
+									<p>2.如果还未收到，请尝试“再次发送”。</p>
+									<p>3.重新发送仍未收到？请尝试更换邮箱。</p>
+								</div>
+								<div class="bottom png"></div>
+							</div>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft fl">邮箱验证码：</div>
+						<div class="formRight">
+							<input type="text" class="shortInput" name="checkNum"/><span class="tipInfo"></span>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft fl">&nbsp;</div>
+						<div class="formRight">
+							<a href="###" class="Midbtn di png" data-next=1>下一步</a>
+						</div>
+					</div>
+                    </form>
+				</div>
+				<div class="tabc hide">
+                    <form action="">
+					<div class="formRow">
+						<div class="formLeft fl">您想绑定的邮箱号码：</div>
+						<div class="formRight">
+							<input type="text" class="longInput dv" placeholder="请输入有效的邮箱号码，便于找回密码" name="email"/><span class="tipInfo"></span>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft fl">&nbsp;</div>
+						<div class="formRight">
+							<a href="###" class="bigBtn di png">免费发送验证码</a>
+							<a href="###" class="disabledBtn di png hide">再次发送<span>59</span>秒</a>
+							<a href="###" class="orange" data-target="#layout2" data-toggle="toggle">没收到？</a>
+							<div class="securityIbox hide"  style="top:-70px;" id="layout2">
+								<div class="top png"></div>
+								<div class="middle">
+									<p>1.请先检查是否在垃圾邮件中。</p>
+									<p>2.如果还未收到，请尝试“再次发送”。</p>
+									<p>3.重新发送仍未收到？请尝试更换邮箱。</p>
+								</div>
+								<div class="bottom png"></div>
+							</div>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft fl">邮箱验证码：</div>
+						<div class="formRight">
+							<input type="text" class="shortInput" name="checkNum" /><span class="tipInfo"></span>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft fl">&nbsp;</div>
+						<div class="formRight">
+							<a href="###" class="Midbtn di png" data-next=2>下一步</a>
+						</div>
+					</div>
+                    </form>
+				</div>
+				<div class="tabc hide">
+					<div class="modifySuccess">
+						<i class="fl png"></i>
+						<div class="right">
+							<p class="tits orange">恭喜，修改邮箱成功</p>
+							<a href="###"><span class="orange">3</span>秒后自动跳转</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 安全设置End -->
+		</div>
+		<!-- 管理设置End -->
+	<!-- 主体内容End -->
+	</div>
+<!-- 主要内容End -->
+</div>
+<!-- 底部内容 -->
+<div class="foot">
+	<div class="wrap">
+		<ul>
+			<li class="links">
+				<i class="line"></i>
+				<p class="fw">友情链接：</p>
+				<ul>
+					<li>
+						<a href="###"><img src="../images/link_1.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_2.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_3.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_4.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_5.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_6.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_7.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_8.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_9.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_10.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_11.png" /></a>
+					</li>
+					<li>
+						<a href="###"><img src="../images/link_12.png" /></a>
+					</li>
+				</ul>
+				<p class="fw">分享到：</p>
+				<div class="bshare-custom icon-medium">
+					<a title="分享到QQ空间" class="bshare-qzone"></a>
+					<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+					<a title="分享到人人网" class="bshare-renren"></a>
+					<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+					<a title="分享到网易微博" class="bshare-neteasemb"></a>
+				</div>
+			</li>
+			<li class="operators">
+				<i class="line"></i>
+				<p class="fw pt10">运营资质：</p>
+				<p>文网文证：沪文网[2010]274号</p>
+				<p>网站备案：[浙B2-20090273]</p>
+				<p>版权所有：杭州边锋网络技术有限公司</p>
+				<p>适龄提示：6岁以上使用</p>
+				<p>家长监护<a href="###"><i class="guardianship dv"></i></a></p>
+				<a href="###"><i class="police"></i></a>
+			</li>
+			<li class="contactUs">
+				<p class="fw pt10">联系我们：</p>
+				<p>邮箱：jixiaojing01@bianfeng.com</p>
+				<p>Q  Q：425864332</p>
+				<p>电话：0571-87859210</p>
+				<p>传真：0571-87859210</p>
+				<p>地址：杭州西斗门路3号天堂软件园B幢C座3楼</p>
+				<p>官方微博</p>
+				<div class="bshare-custom icon-medium">
+					<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+					<span>@白山在线</span>	
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- 底部内容End -->
+
+<script src="../j/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../j/jquery.form.js"></script>
+<script type="text/javascript" src="../j/formValid.js"></script>
+<!--[if IE 6]>
+<script src="../j/DD_belatedPNG.js"></script>
+<script>
+    DD_belatedPNG.fix('.png');
+</script>
+<![endif]-->
+<script type="text/javascript">
+    $(function () {
+        var ui = {
+            $email: $('input[name=email]'),
+            $next: $('[data-next]'),
+            $tab: $('#tab'),
+            $toggle: $('[data-toggle=toggle]'),
+            $checkNum: $('[name=checkNum]'),
+            $tabC: $('.tabc')
+        };
+
+        var oPageSecurity = {
+            init:function () {
+                this.view();
+                this.bindEvent();
+            },
+            view:function () {
+
+            },
+            bindEvent:function () {
+                var self=this;
+                //邮箱验证
+                ui.$email.on('blur',function(){
+                    var error=["还没有输入邮箱账号呀"," 邮箱账号格式不对哦"];
+                    var $this=$(this);
+                    var val=$this.val();
+                    if(val==''){
+                        self.fValidError($this,error[0]);
+                    }else{
+                        var reg=/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+                        if(reg.test(val)){
+                            self.fValidSuccess($this);
+                        }else{
+                            self.fValidError($this,error[1]);
+                        }
+                    }
+                });
+                //没有收到 toggle
+                ui.$toggle.on('click',function(){
+                    var target=$(this).attr('data-target');
+                    var $target=$(target);
+                    $target.toggleClass('hide');
+                })
+                //点击下一步提交操作
+                ui.$next.on('click',function(){
+                    /*var $form=$(this).closest("form");
+                    var data=$form.serialize();
+                    var url=$form.attr("action");
+                    if($form.find(ui.$email).val()=='' && $form.find(ui.$checkNum).val()==''){
+                        if( $form.find(ui.$checkNum).val()==''){
+                            self.fValidError($form.find(ui.$checkNum),'还没有输入邮箱验证码呀');
+                        }
+                        if($form.find(ui.$email).val() == ''){
+                            self.fValidError($form.find(ui.$email),'还没有输入邮箱账号呀');
+                        }
+                        return false
+                    }
+                    if($form.find('.error:not(.hide)').length){  //检测不存在错误
+                        alert('请修改错误后提交')
+                        return false
+                    }
+                    $.post(url,data,function(msg){
+
+                    },'json');*/
+                    self. fShowNext($(this));
+                })
+            },
+            fValidSuccess: function($obj) {
+                $obj.next('.tipInfo').replaceWith('<span class="tipInfo real dv"><i class="ico_16 i34"></i></span>');
+            },
+            fValidError: function($obj, content) {
+                $obj.next('.tipInfo').replaceWith('<span class="tipInfo error dv"><i class="ico_16 i33"></i>'+content+'</span>');
+            },
+            fShowNext:function($obj){
+                var i= $obj.attr('data-next');
+                ui.$tab.find('li').eq(i).addClass('cur').siblings().removeClass('cur');
+                ui.$tabC.eq(i).removeClass('hide').siblings('.tabc').addClass('hide');
+                if(i==2){
+                    setTimeout(function(){alert(222)},3000)
+                }
+            }
+        }
+        oPageSecurity.init();
+    })
+</script>
+
+</body>
+</html>

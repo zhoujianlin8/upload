@@ -1,0 +1,919 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册中心页面</title>
+<link href="../c/reset.css" rel="stylesheet" type="text/css" media="all">
+<link href="../c/base.css" rel="stylesheet" type="text/css" media="all">
+    <!--[if IE 6]>
+    <script src="../j/DD_belatedPNG.js"></script>
+    <script>
+        DD_belatedPNG.fix('.png');
+    </script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrap ">
+    	<!-- 头部内容 -->
+    	<div class="head">
+    		<!-- logo -->
+    		<div class="logo fl png"></div>
+    		<!-- logo End -->
+    		<!-- 主体菜单 -->
+    		<div class="mainNav fl png">
+    			<ul>
+    				<li><a href="###">首页</a><i></i></li>
+    				<li><a href="###">游戏</a><i></i></li>
+    				<li><a href="###">下载</a><i></i></li>
+    				<li class="cur"><a href="###">充值</a><i></i></li>
+    				<li><a href="###">商城</a><i></i></li>
+    				<li><a href="###">会员</a><i></i></li>
+    				<li><a href="###">推广分红</a></li>
+    			</ul>
+    		</div>
+    		<!-- 主体菜单End -->
+    		<!-- 登录区 -->
+    		<div class="loginArea png">
+    			<ul class="di">
+    				<li><a href="###">登录</a><small>|</small></li>
+    				<li><a href="###">注册</a><small>|</small></li>
+    				<li><a href="###">忘记密码</a><small>|</small></li>
+    				<li><a href="###">帮助中心</a></li>
+    			</ul>
+    		</div>
+    		<!-- 登录区End -->
+    	</div>
+    	<!-- 头部内容End -->
+        <!--注册中心主体-->
+        <div class="enroll">
+            <div class="hd clearFix png">
+                <div class="bread fl">
+                    <i></i><span>首页</span><span> > </span><span>注册</span>
+                </div>
+                <div class="fr">
+                    <span href="###">已注册？</span>
+                    <a href="###" class="orange" id="btn_to_login">立刻登录</a>
+                </div>
+            </div>
+            <!--nav 导航-->
+            <div class="navEnroll" id="nav_regist_type">
+                <ul class="clearFix png">
+                    <li data-type="mobile"><a href="###">手机注册</a></li>
+                    <li data-type="ordinary"><a href="###">普通注册</a></li>
+                </ul>
+            </div>
+            <!--nav 导航 end-->
+            <!--nav 手机注册 二级导航-->
+            <div class="navPhoneEnroll" id="nav_regist_step">
+                <ul class="clearFix">
+                    <li class="cur"><a href="###">第一步：验证手机</a><i></i></li>
+                    <li><a href="###">第二步：填写资料</a><i></i></li>
+                    <li><a href="###">第三步：完成注册</a></li>
+                </ul>
+            </div>
+            <!--nav 手机注册 二级导航 end-->
+            <!--验证手机页面-->
+            <form id="form_mobile_step1" action="" class="checkedPhone hide">
+                <div class="bd">
+                    <p class="MT20">注册即送<span class="orange">10000</span>两银子！</p>
+                    <b class="tip">请保证手机可正常接收信息，注册成功后，游戏密码和支付密码将即刻以短信方式发至您的手机。（免费）</b>
+                    <div class="formTr">
+                        <b>手机号码：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_mobileReg_mobile" data-valid="{'type':'mobile'}">
+                        <i class="warn png" id="ico_mobileReg_mobile"></i>
+                        <span id="msg_mobileReg_mobile"> 仅限11位数字，请保持您的手机未停机或关机。</span>
+                    </div>
+                    <a href="###" class="sendCheckedNumber btn">免费发送验证码</a>
+                    <div class="formTr">
+                        <b>获得的验证码：<i class="require">*</i></b>
+                        <input type="text" class="inputSmall" id="txt_mobileReg_code" data-valid="{'type':'txt', 'msg':'请输入正确的验证码'}">
+                        <i class="warn png" id="ico_mobileReg_code"></i>
+                        <span id="msg_mobileReg_code"> 输入手机收到的验证码 </span>
+                    </div>
+
+                </div>
+                <div class="ft textC">
+                    <a href="###" class="btn enrollNow" id="btn_mobile_submit_step1">下一步</a>
+                </div>
+            </form>
+            <!--验证手机页面 end-->
+            <!--填写资料页面-->
+            <form id="form_mobile_step2" action="" class="hide writeInfo">
+                <div class="bd">
+                    <div class="formTr">
+                        <b>游戏昵称：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_mobileReg_nickname" data-valid="{'type':'nickname'}">
+                        <i class="warn png" id="ico_mobileReg_nickname"></i>
+                        <span id="msg_mobileReg_nickname"> 请输入4位至16位长度的昵称</span>
+                    </div>
+                    <div class="formTr">
+                        <b>性别：<i class="require">*</i></b>
+                        <input type="radio" id="man1" name="sex" checked><label for="man1">男</label>
+                        <input type="radio" id="woman1" name="sex"><label for="woman1">女</label>
+                    </div>
+                    <div class="formTr">
+                        <b>身份证号码：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_mobileReg_idcard" data-valid="{'type':'idcard'}">
+                        <i class="warn png" id="ico_mobileReg_idcard"></i>
+                        <span id="msg_mobileReg_idcard">请输入15或者18为的身份证号码  </span>
+                    </div>
+                    <div class="formTr">
+                        <b>姓名：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_mobileReg_realname" data-valid="{'type':'realname'}">
+                        <i class="warn png" id="ico_mobileReg_realname"></i>
+                        <span id="msg_mobileReg_realname">请输入真实姓名</span>
+                    </div>
+                    <div class="formTr">
+                        <b>推广员账户：<i class="require"> </i></b><input type="text" class="inputSmall"><i class="warn png"></i><span>可不填 </span>
+                    </div>
+                    <div class="formTr">
+                        <b><i class="require"> </i></b>
+                        <input type="checkbox" id="chb_mobileReg_accept" data-valid="{'type':'accept'}">
+                        <a href="###" data-common="showAccept" class="fw">我已经阅读并完全接受服务协议</a>
+                        <i class="error png hide" id="ico_mobileReg_accept"></i>
+                        <span id="msg_mobileReg_accept"></span>
+                    </div>
+                </div>
+                <div class="ft textC">
+                    <a href="###" class="btn enrollNow" id="btn_mobile_submit_step2">立刻注册</a>
+                </div>
+            </form>
+            <!--填写资料页面 end-->
+            <!--完成手机注册页面-->
+            <div id="div_mobile_step3" class="enrollSuccess">
+                <div class="textC">
+                    <div class="congratulation"><i class="btn png"></i>恭喜你，注册成功！</div>
+                    <p>请牢记您的游戏账号：<b class="orange">15868412442</b></p>
+                    <p class="orange">您的游戏密码和支付密码已发送至您的手机</p>
+                </div>
+                <div class="ft textC">
+                    <a href="###" class="btn enrollNow">立刻下载游戏</a>
+                    <a href="####" class="green getScore">完善资料，拿积分</a>
+                </div>
+                <div class="hotSuggest">
+                    <h4 class="suggest"><i class="btn png"></i>热门游戏推荐</h4>
+                    <ul class="clearFix">
+                        <li class="fl">
+                            <div class="gameInfo">
+                                <img src="../images/doudizhu.png" alt="" class="png"/>
+                                <div class="gameDetail">
+                                    <p class="name">斗地主</p>
+                                    <p class="classify">[牌类]</p>
+                                    <p class="starScore png"></p>
+                                    <p class="number">912365人添加</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fl">
+                            <div class="gameInfo">
+                                <img src="../images/doudizhu.png" alt="" class="png"/>
+                                <div class="gameDetail">
+                                    <p class="name">斗地主</p>
+                                    <p class="classify">[牌类]</p>
+                                    <p class="starScore png"></p>
+                                    <p class="number">912365人添加</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fl">
+                        <div class="gameInfo">
+                            <img src="../images/doudizhu.png" alt="" class="png"/>
+                            <div class="gameDetail">
+                                <p class="name">斗地主</p>
+                                <p class="classify">[牌类]</p>
+                                <p class="starScore png"></p>
+                                <p class="number">912365人添加</p>
+                            </div>
+                        </div>
+                    </li>
+                        <li class="fl">
+                        <div class="gameInfo">
+                            <img src="../images/doudizhu.png" alt="" class="png"/>
+                            <div class="gameDetail">
+                                <p class="name">斗地主</p>
+                                <p class="classify">[牌类]</p>
+                                <p class="starScore png"></p>
+                                <p class="number">912365人添加</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--完成手机注册页面 end-->
+            <!--普通注册页面-->
+            <form id="form_ordinary_regist" action="" class="hide normalEnroll">
+                <div class="bd">
+                    <p>今天有 <span class="orange">899</span>人已注册,<span class="orange">28977</span>人正在游戏中，赶紧抢注你最爱的游戏账号，开始本地最好玩的棋牌游戏！</p>
+                    <h4>创建游戏账号</h4>
+                    <div class="formTr">
+                        <b>游戏账号：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_ordinaryReg_account" data-valid="{'type':'account'}">
+                        <i class="warn png" id="ico_ordinaryReg_account"></i>
+                        <span id="msg_ordinaryReg_account"> 允许中文、字母、数字、下划线，长度在8-18个字符 </span>
+                    </div>
+                    <div class="formTr">
+                        <b>昵称：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_ordinaryReg_nickname" data-valid="{'type':'nickname'}">
+                        <i class="warn png" id="ico_ordinaryReg_nickname"></i>
+                        <span id="msg_ordinaryReg_nickname"> 请输入4位至16位长度的昵称</span>
+                    </div>
+                    <div class="formTr">
+                        <b>密码：<i class="require">*</i></b>
+                        <input type="password" class="inputLong" id="txt_ordinaryReg_pwd" data-valid="{'type':'password', 'safeLevel':'icoList_ordinaryReg_pwd'}">
+                        <i class="warn png" id="ico_ordinaryReg_pwd"></i>
+                        <span id="msg_ordinaryReg_pwd"> 请输入6-40位字符</span>
+                        <span id="icoList_ordinaryReg_pwd" class="list hide"><em class="cur">低</em><em>中</em><em>高</em></span>
+                    </div>
+                    <div class="formTr">
+                        <b>确认密码：<i class="require">*</i></b>
+                        <input type="password" class="inputLong" id="txt_ordinaryReg_pwdAgain" data-valid="{'type':'passwordAgain', 'origin':'txt_ordinaryReg_pwd'}">
+                        <i class="warn png" id="ico_ordinaryReg_pwdAgain"></i>
+                        <span id="msg_ordinaryReg_pwdAgain">再次输入密码</span>
+                    </div>
+                    <div class="formTr">
+                        <b>性别：<i class="require">*</i></b>
+                        <input type="radio" id="man" name="sex" checked value="1">
+                        <label for="man">男</label>
+                        <input type="radio" id="woman" name="sex" value="0">
+                        <label for="woman">女</label>
+                    </div>
+                    <div class="formTr" id="row_join">
+                        <b>白山在线QQ群：</b>
+                        <input type="radio" id="yes" name="join" value="1">
+                        <label for="yes">加入</label>
+                        <input type="radio" id="no" name="join" checked value="0">
+                        <label for="no">没兴趣</label>
+                    </div>
+                    <div class="formTr" id="row_qq" style="display:none;">
+                        <b>请留下您的QQ：</b>
+                        <input type="text" class="inputLong">
+                        <span>  稍后我们的客服将把您加入玩家群</span>
+                    </div>
+                    <h4>您的身份信息<span>(用于保障您的账户安全）</span></h4>
+                    <div class="formTr">
+                        <b>身份证号码：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_ordinaryReg_idcard" data-valid="{'type':'idcard'}">
+                        <i class="warn png" id="ico_ordinaryReg_idcard"></i>
+                        <span id="msg_ordinaryReg_idcard">请输入15或者18为的身份证号码  </span>
+                    </div>
+                    <div class="formTr">
+                        <b>姓名：<i class="require">*</i></b>
+                        <input type="text" class="inputLong" id="txt_ordinaryReg_realname" data-valid="{'type':'realname'}">
+                        <i class="warn png" id="ico_ordinaryReg_realname"></i>
+                        <span id="msg_ordinaryReg_realname">请输入真实姓名</span>
+                    </div>
+                    <div class="formTr">
+                        <b><i class="require"> </i></b>
+                        <input type="checkbox" id="chb_ordinaryReg_accept" data-valid="{'type':'accept'}">
+                        <a href="###" data-common="showAccept" class="fw">我已经阅读并完全接受服务协议</a>
+                        <i class="error png hide" id="ico_ordinaryReg_accept"></i>
+                        <span id="msg_ordinaryReg_accept"></span>
+                    </div>
+                </div>
+                <div class="ft textC">
+                    <a href="###" class="btn enrollNow" id="btn_ordinary_submit">立刻注册</a>
+                </div>
+            </form>
+            <!--普通注册页面-->
+            <!--完成普通注册页面-->
+            <div id="div_ordinary_success" class="enrollSuccess hide">
+                <div class="textC">
+                    <div class="congratulation"><i class="btn png"></i>恭喜你，注册成功！</div>
+                    <p>请牢记您的游戏账号：<b class="orange"></b></p>
+                    <p>您的游戏昵称:<b class="orange">15868412442</b></p>
+                </div>
+                <div class="ft textC">
+                    <a href="###" class="btn enrollNow">立刻下载游戏</a>
+                    <a href="###" class="green getScore">完善资料，拿积分</a>
+                </div>
+                <div class="hotSuggest">
+                    <h4 class="suggest"><i class="btn png"></i>热门游戏推荐</h4>
+                    <ul class="clearFix">
+                        <li class="fl">
+                            <div class="gameInfo">
+                                <img src="../images/doudizhu.png" alt="" class="png"/>
+                                <div class="gameDetail">
+                                    <p class="name">斗地主</p>
+                                    <p class="classify">[牌类]</p>
+                                    <p class="starScore png"></p>
+                                    <p class="number">912365人添加</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fl">
+                            <div class="gameInfo">
+                                <img src="../images/doudizhu.png" alt="" class="png"/>
+                                <div class="gameDetail">
+                                    <p class="name">斗地主</p>
+                                    <p class="classify">[牌类]</p>
+                                    <p class="starScore png"></p>
+                                    <p class="number">912365人添加</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fl">
+                            <div class="gameInfo">
+                                <img src="../images/doudizhu.png" alt="" class="png"/>
+                                <div class="gameDetail">
+                                    <p class="name">斗地主</p>
+                                    <p class="classify">[牌类]</p>
+                                    <p class="starScore png"></p>
+                                    <p class="number">912365人添加</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fl">
+                            <div class="gameInfo">
+                                <img src="../images/doudizhu.png" alt="" class="png"/>
+                                <div class="gameDetail">
+                                    <p class="name">斗地主</p>
+                                    <p class="classify">[牌类]</p>
+                                    <p class="starScore png"></p>
+                                    <p class="number">912365人添加</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--完成普通注册页面 end-->
+        </div>
+        <!--注册中心主体end-->
+    </div>
+    <!-- 底部内容 -->
+    <div class="foot userAuto">
+    	<div class="wrap">
+    		<ul>
+    			<li class="links">
+    				<i class="line"></i>
+    				<p class="fw">友情链接：</p>
+    				<ul>
+    					<li>
+    						<a href="###"><img src="../images/link_1.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_2.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_3.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_4.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_5.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_6.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_7.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_8.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_9.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_10.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_11.png" /></a>
+    					</li>
+    					<li>
+    						<a href="###"><img src="../images/link_12.png" /></a>
+    					</li>
+    				</ul>
+    				<p class="fw">分享到：</p>
+    				<div class="bshare-custom icon-medium">
+    					<a title="分享到QQ空间" class="bshare-qzone"></a>
+    					<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+    					<a title="分享到人人网" class="bshare-renren"></a>
+    					<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+    					<a title="分享到网易微博" class="bshare-neteasemb"></a>
+    				</div>
+    			</li>
+    			<li class="operators">
+    				<i class="line"></i>
+    				<p class="fw pt10">运营资质：</p>
+    				<p>文网文证：沪文网[2010]274号</p>
+    				<p>网站备案：[浙B2-20090273]</p>
+    				<p>版权所有：杭州边锋网络技术有限公司</p>
+    				<p>适龄提示：6岁以上使用</p>
+    				<p>家长监护<a href="###"><i class="guardianship dv"></i></a></p>
+    				<a href="###"><i class="police"></i></a>
+    			</li>
+    			<li class="contactUs">
+    				<p class="fw pt10">联系我们：</p>
+    				<p>邮箱：jixiaojing01@bianfeng.com</p>
+    				<p>Q  Q：425864332</p>
+    				<p>电话：0571-87859210</p>
+    				<p>传真：0571-87859210</p>
+    				<p>地址：杭州西斗门路3号天堂软件园B幢C座3楼</p>
+    				<p>官方微博</p>
+    				<div class="bshare-custom icon-medium">
+    					<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+    					<span>@白山在线</span>	
+    				</div>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    <!-- 底部内容End -->
+
+    <div class="mask" style="display:none;" id="mask"></div>
+    <!--modal 玩家登录-->
+    <div class="modal userLogin hide" id="dialog_userLogin">
+        <div class="modalContent">
+            <div class="modalHd clearFix png"><h3 class="fl"><i class="user png"></i>玩家登录</h3><a class="close fr png" href="###" title="关闭" id="btn_close"></a></div>
+            <div class="modalBd">
+                <form action="" id="form_login">
+                    <div class="formTr">
+                        <b>游戏账号：</b>
+                        <input type="text" class="inputSmall" placeholder="请输入您的账号..." id="txt_dialogLogin_account">
+                    </div>
+                    <div class="formTr">
+                        <b>密码：</b>
+                        <input type="password" class="inputSmall" id="txt_dialogLogin_pwd">
+                        <a href="###" class="forgetPassword green">忘记密码？</a>
+                    </div>
+                    <div class="formTr" style="margin-top:20px;">
+                        <b>验证码：</b>
+                        <input type="text" class="inputMin" id="txt_dialogLogin_checkcode">
+                        <div class="checkedNumber inlineB"><img src="../images/checkedNumber.png"/></div>
+                        <button class="green">换一张</button>
+                    </div>
+                    <div class="loginNow">
+                        <a href="###" class="btn enrollNow" id="btn_login">立刻登录</a><a class="green" href="###">我要注册</a>
+                    </div>
+                    <div class="error hide" id="span_error">error</div>
+                </form>
+
+            </div>
+            <div class="modalFt png"></div>
+        </div>
+    </div>
+    <!--modal 玩家登录-end-->
+    <!--modal 注册条款弹出框-->
+    <div class="modal registerTerm hide" id="dialog_acccept">
+        <div class="modalContent">
+            <div class="modalHd clearFix png">
+                <h3 class="fl"><i class="registerTermIcon png"></i>用户服务条款</h3>
+                <a class="close fr png" href="###" title="关闭" data-accept="close"></a>
+            </div>
+            <div class="modalBd">
+                <div class="registerInfo">
+                    <h3>用户服务条款</h3>
+                    <h4> 1. 特别提示</h4>
+                    <p>1.1白山在线视频棋牌游戏同意按照本协议的规定及其不时发布的操作规则提供基于互联网的相关服务(以下称“网络服务”)，为获得网络服务，服务使用人(以下称“用户”)应当同意本协议的全部条款并按照页面上的提示完成全部的注册程序。用户在进行注册程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款。这些条款可由白山在线视频棋牌游戏随时更新，《白山在线视频棋牌游戏》服务协议一旦发生变动，白山在线视频棋牌游戏将会在相关的页面上提示修改内容。修改后的服务协议一旦在页面上公布即有效代替原来的服务协议。用户在使用《白山在线视频棋牌游戏》提供的各项服务之前，应仔细阅读本服务协议，如用户不同意本服务协议及/或随时对其的修改，用户可以主动取消白山在线视频棋牌游戏提供的服务。</p>
+                    <p>※　释 义</p>
+                    <p>※　著作权声明</p>
+                    <p>※　用户的基本义务</p>
+                    <p>※　忠实登录个人资料并更新</p>
+                    <p>※　用户保管帐号及密码的义务</p>
+                    <p> ※　隐私权保护※　用户使用线上游戏的限制</p>
+                    <p>※　服务的停止和更改</p>
+                    <p> ※　风险承担</p>
+                    <p>  ※　责任的免除</p>
+                    <p> ※　赔偿责任的排除及限制</p>
+                    <p> ※　链接</p>
+                    <p> ※　白山在线视频棋牌游戏的终止权</p>
+                    <p>※　损害赔偿</p>
+                    <p>※　停止或变更服务</p>
+                    <p>※　广告信息或促销计划</p>
+                    <p> ※　服务条款的修改</p>
+                    <p> ※　个别条款的效力</p>
+                    <p> ※　适用法律</p>
+                    <h4> 1.释义:</h4>
+                    　　 <p>本服务条款系由用户与白山在线视频棋牌游戏就白山在线视频棋牌游戏所属的线上游戏《白山在线视频棋牌游戏》所订立的相关权利义务规范。因此，请于注册成为《白山在线视频棋牌游戏》用户前，确实详细阅读本服务条款的所有内容，当您点选同意键或执行《白山在线视频棋牌游戏》线上游戏即视为同意接受本服务条款的所有规范并愿受其拘束。
+                    　　 本服务条款所指线上游戏是指用户需要通过计算机等电子设备与服务器联机才可以执行的，由白山在线视频棋牌游戏所全权代理的多人互动游戏软件《白山在线视频棋牌游戏》，《白山在线视频棋牌游戏》包括但不限于：一个单独的计算机程序，其名称或标题为：《白山在线视频棋牌游戏》以及相关的书面文档、图片文件、影片、用户手册（载明软件程序的安装与应用方法）以及与《白山在线视频棋牌游戏》相关的说明书、商标、标识以及任何其他的美术品；以上统称为《白山在线视频棋牌游戏》。
+                    　　 用户指愿意通过白山在线视频棋牌游戏提供的游戏途径获得许可（账号和密码）执行线上游戏的个人。</p>
+                    <h4> 2.著作权声明：</h4>
+                    　　<p>《白山在线视频棋牌游戏》的所有相关著作权、专利权、商标、营业秘密及其它任何所有权或权利，均属白山在线视频棋牌游戏或其原始授权人所有。非经白山在线视频棋牌游戏或原始授权人的同意，任何人或用户均不得擅自下载、重制、传输、改作、编辑于任何为线上游戏目的以外的使用或任何以获利为目的的使用，否则应负所有法律责任。《白山在线视频棋牌游戏》网络游戏运营过程中产生并储存于白山在线视频棋牌游戏数据库的任何数据信息（包括但不限于帐号数据信息、角色数据信息、等级物品数据信息等，但用户的姓名、身份证号、电话号码等个人身份数据信息除外）的所有权均属于白山在线视频棋牌游戏，用户在按照本服务条款正常使用《白山在线视频棋牌游戏》网络游戏的过程中对属于其用户帐号的数据信息享有有限使用权。</p>
+                    <h4> 3.用户的基本义务：</h4>
+                    　　 <p>用户需自行配备联机执行线上游戏所需的各项计算机及网络设备，并自行负担上网所需的各项费用。
+                    　　 白山在线视频棋牌游戏向用户提供网络游戏《白山在线视频棋牌游戏》本身属于商业行为，用户有义务根据白山在线视频棋牌游戏的相关规定而支付相应的费用，支付费用方式分为：先付后用及先用后付两种，如用户通过白山在线视频棋牌游戏提供的先用后付方式使用了《白山在线视频棋牌游戏》游戏而拒不缴纳服务费用的，白山在线视频棋牌游戏可终止向该用户提供所有服务并保留要求其偿还服务费用的权利。</p>
+                            <h4> 4.忠实登录个人资料并更新</h4>
+                    　　<p>用户同意于注册时提供完整、详尽、真实的个人资料，若所提供的资料于日后有变更者，应随时于线上进行更新。若用户所提供的资料与事实不符或所提供的资料业已变更而未更新或有任何误导之嫌导致白山在线视频棋牌游戏无法为用户提供或进一步提供服务，白山在线视频棋牌游戏不因此承担任何责任。</p>
+                                <h4> 5.用户保管帐号及密码的义务</h4>
+                    <p> 5.1用户有义务妥善保管在注册并使用《白山在线视频棋牌游戏》时获得的帐号及密码，并为此组帐号及密码登入系统后所开始的一连串行为或活动负责。任何以用户帐号所进行的网上操作均视同为用户的有效操作行为，由此完成的网上操作指令的结果、网上在线的结果或由此造成的损失，由用户承担全部责任。</p>　　　
+                    <p> 5.2为维护自身权益，用户不应将帐号及密码泄漏或提供第三人知悉或出借或软让与他人使用。
+                    <p> 5.3若用户发现帐号或密码遭他人非法使用或有异常使用的情形，因立即通知白山在线视频棋牌游戏。
+                                    <h4> 6.隐私权保护</h4>
+                    <p>6.1保护用户（特别是未成年人）的隐私是白山在线视频棋牌游戏的一项基本政策，因此，若父母（监护人）希望未成年人（尤其是十岁以下子女）得以使用本服务，必须以父母（监护人）名义申请注册，在接受本服务时，应以法定监护人身份加以判断本服务是否符合未成年人。白山在线视频棋牌游戏保证不对外公开或向第三方（本条所列情况除外）提供用户注册资料及用户在使用网络服务时存储在白山在线视频棋牌游戏的非公开内容，但下列情况除外：</p>
+                    <p>（A） 事先获得用户的明确授权；
+                    <p>（B） 根据有关的法律法规要求；
+                    <p>（C） 按照相关政府主管部门的要求；
+                    <p>（D） 为维护社会公众的利益；
+                    <p> （E） 为维护白山在线视频棋牌游戏的合法权益
+                    <p>6．2 白山在线视频棋牌游戏可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与白山在线视频棋牌游戏同等的保护用户隐私的责任，则白山在线视频棋牌游戏可将用户的注册资料等提供给该第三方。
+                    <p>6．3在不透露单个用户隐私资料的前提下，白山在线视频棋牌游戏有权对整个用户数据库进行技术分析并对已进行分析、整理后的用户数据进行商业上的利用。尽管白山在线视频棋牌游戏对用户的隐私权保护做了极大的努力，但是仍然不能保证现有的安全技术措施使用户的技术信息等不受任何形式的损失。
+                                        <h4>7.用户使用线上游戏的限制</h4>
+                    <p> 7.1用户使用白山在线视频棋牌游戏的线上游戏，除应遵守法律、本服务条款的规范外，并应遵守"《白山在线视频棋牌游戏》用户守则"，否则白山在线视频棋牌游戏有权随时按照该守则处分或终止用户使用线上游戏，由此造成的任何损失白山在线视频棋牌游戏不负任何责任。　　
+                    <p> 7.2白山在线视频棋牌游戏严禁用户利用线上游戏的机会做与游戏无关的行为，包括但不限于妨害他人名誉或隐私权；或使用自己、匿名或冒用他人或白山在线视频棋牌游戏名义散播诽谤、不实、威胁、不雅、猥亵、不法、攻击性或侵害他人权利的消息或文字，传播色情或其它违反社会公德的言论；传输或散布计算机病毒；从事广告或贩卖商品；从事不法交易或张贴虚假不实或引人犯罪的信息；或任何违反中华人民共和国法律或其它法令的行为，亦不得利用线上游戏的机会，与其它用户或他人进行非法的交涉或对话。 　　
+                    <p>7.3用户对白山在线视频棋牌游戏游戏管理人员所进行的询问应据实澄清，否则白山在线视频棋牌游戏有权随时终止用户使用线上游戏；白山在线视频棋牌游戏发现不法或可疑的行为者，白山在线视频棋牌游戏有权随时通报司法或有权机关处理，并有权同时向该机关陈报用户的基本资料及行为供该等机关为调查。用户就因此所致生的不便或困扰，不得向白山在线视频棋牌游戏请求任何损害或补偿。　　
+                    <p>7.4用户应就其在线上游戏的行为或活动自负责任，白山在线视频棋牌游戏仅提供线上游戏予用户自行执行或与其它用户依照游戏设定的方式进行竞赛或游戏。白山在线视频棋牌游戏就用户在线上游戏的行为或活动或交易不负任何责任。
+                    <h4>8.服务的停止和更改　</h4>
+                   <p>8.1发生下列情形之一时，白山在线视频棋牌游戏有权停止或中断线上游戏：　　
+                   <p>8.1.1 对于白山在线视频棋牌游戏的网络设备进行必要的保养及施工　　
+                   <p>8.1.2 发生突发性的网络设备故障时　　
+                   <p>8.1.3 由于白山在线视频棋牌游戏所用的网络通信设备由于不明原因停止，无法提供服务时　　
+                   <p>8.1.4 由于不可抗力因素致使白山在线视频棋牌游戏无法提供线上游戏服务　　
+                   <p>8.1.5 考虑到白山在线视频棋牌游戏保存用户数据库所耗费的资源， 用户同意：自白山在线视频棋牌游戏充值卡发行之日起3个月内进行登录充值完毕，白山在线视频棋牌游戏同时提醒用户：在用户购买充值卡时，请确认充值有效期，以免造成未及时充值而使充值卡失效。同时用户同意：白山在线视频棋牌游戏有权对已经充值，但是6个月未上线使用的帐号内游戏道具（如“银子”）进行系统收回处理。对于游戏的道具（如游戏“衣服”，但是“银子”除外）有效期为2个月。
+                    <p>8.2除此之外，白山在线视频棋牌游戏有权停止或更改各项服务内容或终止任一用户帐户，但需在《白山在线视频棋牌游戏》官方网站首页提前24小时通知，用户违反用户守则的处理不在此例。无论任何情形，白山在线视频棋牌游戏就停止或更改或终止用户帐户所可能产生的不便或损害，白山在线视频棋牌游戏对用户本人或任何第三人均不负任何损害赔偿责任。　　
+                    <p> 8.3 用户应了解并同意，白山在线视频棋牌游戏可能因公司本身、其它协力厂商或相关电信业者网络系统软硬件设备的故障、失灵、或人为操作的疏失而全部或一部分中断、暂时无法使用、迟延或因他人侵入白山在线视频棋牌游戏系统篡改或伪造变造资料等，造成线上游戏的停止或中断者，用户不得要求白山在线视频棋牌游戏提供任何的补偿或赔偿。　　
+                    <p>8.4 《白山在线视频棋牌游戏》道具为增加游戏乐趣而设置并随游戏的停止运营而消失，用户一经购买将不得以任何形式退还给白山在线视频棋牌游戏。鉴于网络游戏的特殊性质，道具仅在游戏的运营期内有效。
+                        <h4>9.风险承担</h4>
+                    　　<p>用户同意使用白山在线视频棋牌游戏线上游戏软件《白山在线视频棋牌游戏》是出于用户个人意愿，并愿自负任何风险，包括但不限于其因执行《白山在线视频棋牌游戏》或自行由《白山在线视频棋牌游戏》官方网站下载游戏或资料图片而导致用户或其所使用的计算机系统损害，或发生任何资料的流失等。
+                            <h4> 10.责任的免除</h4>
+                    　　<p>白山在线视频棋牌游戏就线上游戏《白山在线视频棋牌游戏》，不负任何明示或默示的担保责任，亦不保证《白山在线视频棋牌游戏》的稳定、安全、无误及不中断。用户应自行承担执行线上游戏所有的风险及因此可能致生的损害，包括而不限于其因执行线上游戏《白山在线视频棋牌游戏》或自行由《白山在线视频棋牌游戏》官方网站下载游戏或资料图片而导致用户或其所使用的计算机系统损害，或发生任何资料的流失等。
+                                <h4>  11.赔偿责任的排除及限制</h4>
+                    　　<p>白山在线视频棋牌游戏对于用户使用线上游戏《白山在线视频棋牌游戏》或无法使用线上游戏所产生的任何直接、间接、衍生的损害或所失利益不负任何损害赔偿责任。若依法无法完全排除损害赔偿责任时，白山在线视频棋牌游戏的赔偿责任亦以用户就使用线上游戏所支付白山在线视频棋牌游戏的价款为限。
+                                    <h4>   12.链接</h4>
+                    　　<p>白山在线视频棋牌游戏在其《白山在线视频棋牌游戏》官方网站的所有网页上所提供的所有链接，可能链接到其它个人、公司或组织的网站，提供该等网站的目的，是便利用户自行搜寻或取得信息，上海首茂实业有限公司对于被链接的个人、公司或组织的网站所提供的产品、服务或信息，不担保其真实性、完整性、实时性或可信度、这些个人、公司或组织与白山在线视频棋牌游戏间亦不存在任何雇用、委任、代理、合伙或其它类似的关系。
+                    <h4>13.白山在线视频棋牌游戏的终止权</h4>
+                    　　<p>用户应确实遵守本服务条款及有关法律命令的规定。白山在线视频棋牌游戏对于用户是否违反服务条款有最终决定权。若白山在线视频棋牌游戏认定用户违反服务条款或任何法令者，用户同意白山在线视频棋牌游戏可以随时终止用户的帐号及密码使用权。</p>
+                    <h4>14.损害赔偿</h4>
+                    　　<p>用户若违反服务条款或相关法令，导致上白山在线视频棋牌游戏、或其关系企业、受雇人、受托人、代理人或/及其它相关履行辅助人因此而受到损害或支出费用（包括但不限于因进行民刑事或行政程序所支出的律师费用），用户应负担损害赔偿责任。</p>
+                    <h4>15.停止或变更服务</h4>
+                    <p>15.1白山在线视频棋牌游戏取消或停止用户的资格或加以限制，用户不得要求补偿或赔偿。</p>　　
+                    <p>15.2白山在线视频棋牌游戏保留将来新增、修改或删除线上游戏的全部或部分的权利，且不另行个别通知，用户不得因此要求任何补偿或赔偿。</p>
+                    <h4>16.广告信息或促销计划</h4>
+                    　　<p>白山在线视频棋牌游戏的线上游戏软件上可能刊登商业广告、或其它活动促销的广告。这些内容系广告商或商品服务提供者所为，白山在线视频棋牌游戏仅提供刊登内容的媒介。用户通过白山在线视频棋牌游戏或其所链接的网站所购买的服务或商品，其交易行为仅存于用户与该商品或服务的提供者之间，与白山在线视频棋牌游戏无关。</p>
+                   <h4>17.服务条款的修改</h4>
+                    　<p>　由于用户及市场状况的不断变化，白山在线视频棋牌游戏保留随时修改本服务条款的权利，修改本服务条款时，白山在线视频棋牌游戏将于《白山在线视频棋牌游戏》官方网站首页公告修改的事实，而不另对用户进行个别通知。若用户不同意修改的内容，可停止使用白山在线视频棋牌游戏的线上游戏。若用户继续使用白山在线视频棋牌游戏的线上游戏，即视为用户业已接受白山在线视频棋牌游戏所修订的内容。</p>
+                    <h4>18.个别条款的效力</h4>
+                    　　<p>本服务条款所定的任何条款的一部或全部无效者，不影响其它条款的效力。</p>
+                    <h4>19.法律适用及纠纷解决</h4>
+                    　　<p>本服务条款的解释，效力及纠纷的解决，适用于中华人民共和国法律。如双方就本协议内容或其执行发生任何争议，双方应尽量友好协商解决；如协商不成，任何与本服务协议有关的争议均由白山在线视频棋牌游戏所在地的人民法院管辖。</p>
+                    <h4>用户须知</h4>
+                    　<p>作为著名的网络游戏之一，《白山在线视频棋牌游戏》拥有完善的游戏机制和强壮的运行能力。为了各位玩家能够更好的享受《白山在线视频棋牌游戏》中的每个精彩时刻，您应该遵守以下守则：</p>　
+                   <p> 一、 玩家之间人人平等，这是我们对您进行服务的准则。我们努力使每个玩家获得同等质量的服务，您也应该做到尊重其他玩家的权利，不进行任何可能会侵害其他玩家游戏质量的活动。</p>　　
+                   <p> 二、 网络游戏基于人人互动才能精彩，为了使你在虚拟世界中拥有更多的朋友，请在游戏中注意言行举止，礼貌用语。对于语言污秽的玩家，白山在线视频棋牌游戏管理小组在获得举报后将会采取禁言等措施进行管理。　　</p>
+                   <p> 三、 公平游戏是享受游戏的前提，正如每一个人都知道的，任何程序都存在BUG，虽然我们已经解决了所有已知的BUG，但是不能排除其他BUG存在的可能性。作为游戏玩家，应该能够在发现BUG时主动向冰城边锋管理小组汇报。严禁利用任何BUG进行非正常性的获利，这些获利包括但不限于获得额外的经验值，道具物品等。一经发现，白山在线视频棋牌游戏管理小组将有权利对该玩家处以关闭帐户处罚同时查封因BUG出现的非法道具。</p> 　　
+                    <p>四、玩家应该自觉不参与以真实货币或者物品换取虚拟物品或游戏帐号的交易行为，我们将不对这一类交易中产生的任何问题进行支持或者保障。</p>
+                    <p>五、为了保证游戏公平性，白山在线视频棋牌游戏管理将不会介入到任何玩家之间纠纷中去。</p>　　
+                    <p>六、 每个玩家均有请求游戏管理人员帮助的权利，但是，为了能够让更多的人获得帮助，每个玩家应该自觉不与游戏管理人员闲聊。游戏管理人员有权利不回答与工作无关的闲聊话题</p>　　
+                    <p>七、 每个玩家均有监督游戏管理人员的权利，如果您发现游戏管理人员任何违规行为，均可以采用游戏提供的截图方式（保障图片真实性）获取现场，并将投诉内容通过email提交到gm-gameabc@shanda.com.cn ，我们的纪律检查部门将会对该名游戏管理员进行检查。</p>
+                    <p>八、 理解并且遵守上海首茂实业有限公司颁布的玩家守则和服务承诺以及其他规定。</p>
+                   <h3> 玩家守则</h3>
+                   <h4>一、作弊行为的定义：</h4>
+                   <p>为获得不正当利益或恶意损害其他玩家利益而主动、被动炒分、恶意串通，恶意耗时、散布虚假消息、利用作弊软件或程序漏洞，等行为都属于作弊行为。</p>
+                    <h4>二、正确处理好用户和用户之间的关系</h4>　　
+                    <p>1、行为：辱骂、人身攻击其它玩家，妨碍其他玩家正常游戏
+                    处罚措施：情节较轻者采取禁言，情节严重者暂停其账号及各项服务。</p> 　　
+                    <p>2、行为：不断吵闹、重复发言多次、不断打广告、恶意刷屏等侵犯大多数用户权益；恶意连续骚扰他人，影响他人进行游戏，不听劝阻。
+                    处罚措施：将被关闭聊天功能、封账号。</p>
+                    <h4>四、正确处理用户和游戏本身的关系</h4>　　
+                   <p>3、行为：使用违反命名规则之角色名称：包括但不限于含有人身攻击、淫秽、辱骂、反动及其他危害本游戏形象、同GM服务角色名故意相似扰乱正常服务秩序以及损害国家利益和社会公德性质的文字。　　处罚措施：一经发现，立刻删除该游戏账号，请您谨慎选择自己的角色名！</p>
+                    <p>4、行为：利用各种方式攻击或入侵游戏服务器，或使用异常的方法登录《白山在线视频棋牌游戏》服务。</p>
+                    处罚措施：直接删除该用户账号，同时保留对此行为之一切法律追诉权。 　　
+                    <p>5、行为：恶性破坏我们的服务设施，包括但不限于：利用编译或反编译程序修改游戏资料、使用异常的方法登录游戏、使用网络加速器等外挂软件或机器人程式等恶意破坏服务设施、扰乱正常服务秩序的行为。 　　
+                    处罚措施：违反者将被取消继续进行游戏的权利。同时保留对此行为之一切法律追诉权</p> 　
+                    <p>6、行为：为获得不正当利益或恶意损害其他玩家利益而主动、被动炒分、恶意串通，恶意耗时、散布虚假消息、利用作弊软件或程序漏洞进行作弊的行为。
+                    处罚措施：一经发现或经用户举报查证属实后，保留对该帐号删除非法所得银两，非法所得积分等非法所得的权利，保留对该帐号进行封闭帐号使用权的权利。</p> 　　
+                    <p>7、行为：利用游戏提供的功能进行非法实物交易等违反国家法律法规的行为。　　
+                    处罚措施：上述行为一经发现，立即注销帐号，并交由国家有关机构处理。</p>
+                    <h4>四、正确处理用户和GM的关系：</h4>　　
+                    <p>8、行为：在游戏中无故呼叫管理员（GM），并且频繁地发骚扰信息给GM。处罚措施：处以该玩家关闭聊天功能、暂停账号。</p> 　　　　
+                    <p>9、行为：不服从管理员安排、对管理员辱骂 处罚措施：处以停止账号等处罚。</p>　　　　
+                    <p>10、行为：.在游戏中假冒GM或其他客户服务人员。处罚措施：给予严重警告并做注销该帐号处理。</p>　　　　
+                   <h4> 五、其他　</h4>　
+                    <h4>11、声明：</h4>
+                    　　<p>请玩家遵守以上规定，若因违规而受到处分，导致储值卡使用金额等损失，由玩家自行负责。　　 本用户守则的最终解释权利归白山在线视频棋牌游戏所有，并保留更新的权利，请用户经常察看，并严格遵守。GM将有权立即暂停任何可能危害游戏系统的游戏账号上线权利而不先行告之，所有GM都将严格按照中立和公正原则，不偏袒、不徇私，所有GM都将严格按照本条例的规定，考量实际违规情况，不减轻和从重处罚。</p> 　　
+                    <h4>12、附则：</h4>
+                    　　<p>本条例的修正、发布、解释权归于上海首茂实业有限公司；用户使用本公司提供的在线游戏服务，即应当遵守本条例的规定；鼓励用户对本条例提出意见或建议。</p>
+                    <h4>版权声明</h4>
+                    <p>开发商：白山在线视频棋牌游戏运营商：白山在线视频棋牌游戏　　本产品及使用说明书均受版权法保护，所有程序及图文内容非经著作权人书面许可，不得以任何方式做全部或局部复制、转载或修改。用户应按使用许可协议的规定使用本产品，违者将依法追究其责任。
+                    　　本产品及包装、手册上的所有相关产品名称、商标、品牌、画面均归原著作权人或白山在线视频棋牌游戏拥有，是属于其各自所有者的财产。　</p>　
+                    <p>白山在线视频棋牌游戏二0一0年五月</p>
+                </div>
+                <div class="textC">
+                    <a href="###" class="btn enrollNow" data-accept="close">关闭</a>
+                </div>
+            </div>
+            <div class="modalFt png"></div>
+        </div>
+    </div>
+    <!--modal 注册条款弹出框-end-->
+    <!--modal 注册账号弹出层-->
+   <!-- <div class="modal enrollCountModal">
+        <div class="modalContent">
+            <div class="modalHd clearFix png"><h3 class="fl"><i class="enrollCountIcon png"></i>注册账号</h3><a class="close fr png" href="###" title="关闭" id="btn_close"></a></div>
+            <div class="modalBd">
+                <form id="form_ordinary_regist" action="" class="normalEnroll">
+                    <div class="bd">
+                        <p>今天有 <span class="orange">899</span>人已注册,<span class="orange">28977</span>人正在游戏中，赶紧抢注你最爱的游戏账号，开始本地最好玩的棋牌游戏！</p>
+                        <h4>创建游戏账号</h4>
+                        <div class="formTr">
+                            <b>游戏账号：<i class="require">*</i></b>
+                            <input type="text" class="inputSmall" id="txt_ordinaryReg_account" data-valid="{'type':'account'}">
+                            <i class="warn png" id="ico_ordinaryReg_account"></i>
+                            <span id="msg_ordinaryReg_account"> 允许中文、字母、数字、下划线，长度在8-18个字符 </span>
+                        </div>
+                        <div class="formTr">
+                            <b>昵称：<i class="require">*</i></b>
+                            <input type="text" class="inputSmall" id="txt_ordinaryReg_nickname" data-valid="{'type':'nickname'}">
+                            <i class="warn png" id="ico_ordinaryReg_nickname"></i>
+                            <span id="msg_ordinaryReg_nickname"> 请输入4位至16位长度的昵称</span>
+                        </div>
+                        <div class="formTr">
+                            <b>密码：<i class="require">*</i></b>
+                            <input type="password" class="inputSmall" id="txt_ordinaryReg_pwd" data-valid="{'type':'password', 'safeLevel':'icoList_ordinaryReg_pwd'}">
+                            <i class="warn png" id="ico_ordinaryReg_pwd"></i>
+                            <span id="msg_ordinaryReg_pwd"> 请输入6-40位字符</span>
+                            <span id="icoList_ordinaryReg_pwd" class="list hide"><em class="cur">低</em><em>中</em><em>高</em></span>
+                        </div>
+                        <div class="formTr">
+                            <b>确认密码：<i class="require">*</i></b>
+                            <input type="password" class="inputSmall" id="txt_ordinaryReg_pwdAgain" data-valid="{'type':'passwordAgain', 'origin':'txt_ordinaryReg_pwd'}">
+                            <i class="warn png" id="ico_ordinaryReg_pwdAgain"></i>
+                            <span id="msg_ordinaryReg_pwdAgain">再次输入密码</span>
+                        </div>
+                        <div class="formTr">
+                            <b>性别：<i class="require">*</i></b>
+                            <input type="radio" id="man" name="sex" checked value="1">
+                            <label for="man">男</label>
+                            <input type="radio" id="woman" name="sex" value="0">
+                            <label for="woman">女</label>
+                        </div>
+                        <h4>您的身份信息<span>(用于保障您的账户安全）</span></h4>
+                        <div class="formTr">
+                            <b>身份证号码：<i class="require">*</i></b>
+                            <input type="text" class="inputSmall" id="txt_ordinaryReg_idcard" data-valid="{'type':'idcard'}">
+                            <i class="warn png" id="ico_ordinaryReg_idcard"></i>
+                            <span id="msg_ordinaryReg_idcard">请输入15或者18为的身份证号码  </span>
+                        </div>
+                        <div class="formTr">
+                            <b>姓名：<i class="require">*</i></b>
+                            <input type="text" class="inputSmall" id="txt_ordinaryReg_realname" data-valid="{'type':'realname'}">
+                            <i class="warn png" id="ico_ordinaryReg_realname"></i>
+                            <span id="msg_ordinaryReg_realname">请输入真实姓名</span>
+                        </div>
+                        <div class="formTr">
+                            <b><i class="require"> </i></b>
+                            <input type="checkbox" id="chb_ordinaryReg_accept" data-valid="{'type':'accept'}">
+                            <a href="###" data-common="showAccept" class="fw">我已经阅读并完全接受服务协议</a>
+                            <i class="error png hide" id="ico_ordinaryReg_accept"></i>
+                            <span id="msg_ordinaryReg_accept"></span>
+                        </div>
+                    </div>
+                    <div class="ft textC">
+                        <a href="###" class="btn enrollNow" id="btn_ordinary_submit">立刻注册</a>
+                    </div>
+                </form>
+            </div>
+            <div class="modalFt png"></div>
+        </div>
+    </div>-->
+ <!--modal 注册账号弹出层-end-->
+
+
+</body>
+
+<script src="../j/jquery-1.9.1.min.js"></script>
+<script src="../j/jquery.form.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&uuid=&pophcol=2&lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+
+<script src="../j/formValid.js"></script>
+<script type="text/javascript">
+$(function() {
+	var ui = {
+        $mask: $('#mask'),
+        $btn_to_login: $('#btn_to_login'),
+		$nav_regist_type: $('#nav_regist_type'),
+        $nav_regist_step: $('#nav_regist_step'),
+        $form_mobile_step1: $('#form_mobile_step1'),
+        $btn_mobile_submit_step1: $('#btn_mobile_submit_step1'),
+        $form_mobile_step2: $('#form_mobile_step2'),
+        $btn_mobile_submit_step2: $('#btn_mobile_submit_step2'),
+        $div_mobile_step3: $('#div_mobile_step3'),
+        $form_ordinary_regist: $('#form_ordinary_regist'),
+        $btn_ordinary_submit: $('#btn_ordinary_submit'),
+        $div_ordinary_success: $('#div_ordinary_success'),
+        $txt_valids: $('[data-valid]'),
+        $dialog_userLogin: $('#dialog_userLogin'),
+        $btn_close: $('#btn_close'),
+        $form_login: $('#form_login'),
+        $btn_login: $('#btn_login'),
+        $span_error: $('#span_error'),
+        $txt_dialogLogin_account: $('#txt_dialogLogin_account'),
+        $txt_dialogLogin_pwd: $('#txt_dialogLogin_pwd'),
+        $txt_dialogLogin_checkcode: $('#txt_dialogLogin_checkcode'),
+        $dialog_acccept: $('#dialog_acccept'),
+        $btn_common: $('[data-common]'),
+        $row_join: $('#row_join'),
+        $row_qq: $('#row_qq')
+	}
+
+	var oPage = {
+		init: function() {
+			this.view();
+			this.bindEvent();
+		},
+		view: function() {
+            var request = this.fGetRequest();
+            var type = request['type'];
+            this.fShowRegist(type);
+		},
+		bindEvent: function() {
+            var self = this;
+            // 弹出登录框按钮
+            ui.$btn_to_login.on('click', function() {
+                ui.$mask.show();
+                ui.$dialog_userLogin.removeClass('hide');
+            });
+            // 登录框关闭
+            ui.$btn_close.on('click', function() {
+                ui.$dialog_userLogin.addClass('hide');
+                ui.$mask.hide();
+            });
+            // 登录框
+            ui.$btn_login.on('click', function() {
+                self.fLoginDialogSubmit();
+            });
+            // 注册方式
+            ui.$nav_regist_type.on('click', 'li:not(".cur")', function() {
+                var $ul=$(this).closest('ul');
+                var type = $(this).data('type');
+                var nLeft1=$(this).offset().left;
+                var nLeft0=ui.$nav_regist_type.find('li').eq(0).offset().left;
+                $ul.animate({
+                    backgroundPositionX:nLeft1-nLeft0
+                },200)
+                self.fShowRegist(type);
+            });
+            // 表单校验
+            ui.$txt_valids.on('blur', function() {
+                fInputValid($(this));
+            });
+            // 手机注册第一步提交
+            ui.$btn_mobile_submit_step1.on('click', function() {
+                var flag = true;
+                flag = self.fFormValid(ui.$form_mobile_step1);
+                if(flag) {//表单异步请求
+                    self.fShowRegist('mobile', 2);
+                }
+            });
+            // 手机注册第二步提交
+            ui.$btn_mobile_submit_step2.on('click', function() {
+                var flag = true;
+                flag = self.fFormValid(ui.$form_mobile_step2);
+                if(flag) {//表单异步请求
+                    self.fShowRegist('mobile', 3);
+                }
+            });
+            // 普通注册提交
+            ui.$btn_ordinary_submit.on('click', function() {
+                var flag = true;
+                flag = self.fFormValid(ui.$form_ordinary_regist);
+                if(flag) {//表单异步请求
+                    self.fShowRegist('ordinary', 2);
+                }
+            });
+            // 普通注册里加入qq群
+            ui.$row_join.on('click', 'input[type=radio]', function() {
+                var val = $(this).closest('div').find('input[type=radio]:checked').val();
+                if(val == 1) {//加入
+                    ui.$row_qq.show();
+                } else {
+                    ui.$row_qq.hide();
+                }
+            });
+            // 注册协议关闭
+            ui.$dialog_acccept.on('click', 'a', function() {
+                if($(this).data('accept') == 'close') {
+                    ui.$dialog_acccept.addClass('hide');
+                    ui.$mask.hide();
+                }
+            });
+            // 显示注册协议
+            ui.$btn_common.on('click', function() {
+                var common = $(this).data('common');
+                if(common == 'showAccept') {
+                    ui.$mask.show();
+                    ui.$dialog_acccept.removeClass('hide');
+                }
+            });
+		},
+        // 表单校验
+        fFormValid: function($form) {
+            var self = this;
+            var flag = true;
+            $form.find('[data-valid]').each(function() {
+                flag = fInputValid($(this));
+                if(!flag) {
+                    return false;
+                }
+            });
+            return flag;
+        },
+        // 显示注册
+        fShowRegist: function(type, step) {
+            if(!type) {
+                type = 'mobile';
+            }
+            this.fShowRegistType(type);
+            this.fShowRegistContent(type, step);
+        },
+        // 注册方式显示
+        fShowRegistType: function(type) {
+            var $lis = ui.$nav_regist_type.find('li').removeClass('cur');
+            $lis.each(function() {
+                if($(this).data('type') == type) {
+                    $(this).addClass('cur');
+                    return false;
+                }
+            });
+        },
+        // 注册内容块显示
+        fShowRegistContent: function(type, step) {
+            ui.$nav_regist_step.addClass('hide');
+            ui.$form_mobile_step1.addClass('hide');
+            ui.$form_mobile_step2.addClass('hide');
+            ui.$div_mobile_step3.addClass('hide');
+            ui.$form_ordinary_regist.addClass('hide');
+            ui.$div_ordinary_success.addClass('hide');
+            if(!step) {
+                step = 1;
+            }
+            if(!type) {
+                type = 'mobile';
+            }
+            if(type == 'mobile') {
+                ui.$nav_regist_step.removeClass('hide')
+                    .find('li').removeClass('cur').eq(step-1).addClass('cur');
+                if(step == 1) {
+                    ui.$form_mobile_step1.removeClass('hide');
+                } else if(step == 2) {
+                    ui.$form_mobile_step2.removeClass('hide');
+                } else if(step == 3) {
+                    ui.$div_mobile_step3.removeClass('hide');
+                }
+            } else if(type == 'ordinary') {
+                if(step == 1) {
+                    ui.$form_ordinary_regist.removeClass('hide');
+                } else if(step == 2) {
+                    ui.$div_ordinary_success.removeClass('hide');
+                }
+            }
+        },
+        // 手机注册步骤显示
+        fShowRegist_mobile_nav: function(step) {
+            ui.$nav_regist_step.find('li').removeClass('cur').index(step - 1).addClass('cur');
+        },
+        fGetRequest: function() {
+           var url = location.search; //获取url中"?"符后的字串
+           var theRequest = new Object();
+           if (url.indexOf("?") != -1) {
+              var str = url.substr(1);
+              strs = str.split("&");
+              for(var i = 0; i < strs.length; i ++) {
+                 theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+              }
+           }
+           return theRequest;
+        },
+        // 登录框提交
+        fLoginDialogSubmit: function() {
+            ui.$span_error.removeClass('hide');
+            if(ui.$txt_dialogLogin_account.val() == '') {
+                ui.$span_error.text('未输入游戏账号');
+                ui.$txt_dialogLogin_account.focus();
+                return false;
+            }
+            if(ui.$txt_dialogLogin_pwd.val() == '') {
+                ui.$span_error.text('未输入密码');
+                ui.$txt_dialogLogin_pwd.focus();
+                return false;
+            }
+            if(ui.$txt_dialogLogin_checkcode.val() == '') {
+                ui.$span_error.text('未输入验证码');
+                ui.$txt_dialogLogin_checkcode.focus();
+                return false;
+            }
+            ui.$span_error.addClass('hide');
+            $form_login.ajaxSubmit({
+                success:function(data) {
+                    if(data.code == 0) {
+
+                    } else {
+                        ui.$span_error.text('登陆报错').addClass('hide');
+                    }
+                }
+            });
+        }
+	}
+
+	oPage.init();
+
+})
+</script>
+
+</html>

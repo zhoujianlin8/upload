@@ -1,0 +1,410 @@
+<!-- 卡密充值 -->
+<form id="form_card" type="post" action="XXXX">
+	<div class="content userAuto" id="card_content">
+		<div class="CardPassword" id="card_password">
+			<div class="top"></div>
+			<div class="middle">
+				<div class="accountNumber">
+					<i class="greenLabel png">充值帐号</i>
+					<div class="formRow">
+						<div class="formLeft dv">帐号：</div>
+						<div class="formRight dv">
+							<input type="text" id="txt_account" placeholder="请输入您的帐号..." class="longInput dv" />
+							<span></span>
+							<!-- <span class="real dv"><i class="ico_16 i34"></i></span>
+							<span class="error dv" style="display:none"><i class="ico_16 i33"></i>改帐号不存在</span> -->
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft di">昵称：</div>
+						<div class="formRight di">
+							<p class="orange" id="span_cards_nickname"></p>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft di"></div>
+						<div class="formRight di">
+							<label for="Top-tips">
+								<input type="checkbox" id="Top-tips" class="dv"/>
+								<span class="fs12 dv">在帮<span class="orange">TA</span>充值？给<span class="orange">TA</span>带句话吧：</span>
+							</label>
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft di fl">留言：</div>
+						<div class="formRight di">
+							<div class="messageBox">
+								<div class="bdBox">
+									<textarea id="txt_message" placeholder="请输入你想对TA说的话，充值成功后会通知到TA,最 多50字哦~"></textarea>
+									<div class="field">
+										<span>签名：</span>
+										<input type="text" class="orange" />
+									</div>
+								</div>
+                                <div class="selector">
+                                    <i class="arrow png" id="btn_commonly_words"></i>
+                                    <div class="seltTit">常用段子</div>
+                                    <div class="dropBox" id="div_commonly_words" style="display:none;">
+                                        <ul class="dropList">
+                                            <li data-val="帕拉拉啦一段话">死皮赖脸</li>
+                                            <li data-val="魅惑撒娇sdf">魅惑撒娇</li>
+                                            <li data-val="救命啊">江湖救急</li>
+                                        </ul>
+                                    </div>
+                                </div>
+						   </div>
+						</div>
+					</div>
+				</div>
+				<div class="password">
+					<i class="greenLabel png">卡密</i>
+					<div class="formRow">
+						<div class="formLeft di">
+							卡号：
+						</div>
+						<div class="formRight di">
+							<input type="text" class="mid dv" data-type="card_id"/>
+							<span></span>
+							<!-- <span class="real dv"><i class="ico_16 i34"></i></span>
+							<span class="error dv" style="display:none;"><i class="ico_16 i33"></i>卡号位数不对</span> -->
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formLeft di">
+							密码：
+						</div>
+						<div class="formRight di">
+							<input type="password" class="mid" data-type="card_pwd"/>
+							<span></span>
+						</div>
+					</div>
+					<div class="addCard fr">
+						<a href="###" class="png" id="btn_addCard"></a>
+						<p>增加一张卡</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom png"></div>
+			<!-- <div class="addCardPassword png">
+				<i class="orangeLabel png">卡密</i>
+				<div class="formRow">
+					<div class="formLeft di">
+						卡号：
+					</div>
+					<div class="formRight di">
+						<input type="text" class="mid dv" />
+						<span class="real dv"><i class="ico_16 i34"></i></span>
+						<span class="error dv"><i class="ico_16 i33"></i>卡号位数不对</span>
+					</div>
+				</div>
+				<div class="formRow">
+					<div class="formLeft di">
+						密码：
+					</div>
+					<div class="formRight di">
+						<input type="password" class="mid" />
+					</div>
+				</div>
+				<div class="moveCard fr">
+					<a href="###" class="png"></a>
+					<p>删除此卡</p>
+				</div>
+			</div> -->
+			<div class="nextBtn textC">
+				<a href="###" class="png" id="btn_next">提交</a>
+			</div>
+		</div>
+		<div class="CardPasswordSuccess" id="card_success" style="display:block;">
+			<div class="top png"></div>
+			<div class="middle png">
+				<!--<div class="successContent textC">
+					<i></i>
+					<p id="span_cards_success_content">
+						<span class="orange">kpch8779(花雨大猫）</span>已成功冲入<span class="orange">0</span>元宝
+					</p>
+				</div>
+				<div class="nextBtn textC linear">
+					<a href="###" class="png" id="btn_charge_again">我还要再充一笔</a>
+				</div>-->
+              <!--  <div class="errorContent textC">
+                    <i class="error i"></i>
+                    <p class="chargeFail">充值失败</p>
+                    <p class="msg">
+                        您的充值卡已过期，请更换充值卡后重新充值！
+                    </p>
+                </div>
+                <div class="nextBtn textC linear">
+                    <a href="###" class="png" id="btn_charge_again">重新充值</a>
+                </div>-->
+                <div class="errorAndSuccess textC">
+                    <p>您提交的卡密中，已成功充值2张，失败1张。</p>
+                    <div class="table">
+                        <table>
+                            <thead>
+                               <th>失败卡号</th><th>失败原因</th>
+                            </thead>
+                            <tbody>
+                                <tr><td>151</td><td>卡号枸杞</td></tr>
+                                <tr><td>151</td><td>卡号枸杞</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="nextBtn textC linear">
+                        <a href="###" class="png" id="btn_charge_again">我还要再充一笔</a>
+                    </div>
+                </div>
+			</div>
+			<div class="bottom png"></div>
+			<div class="buyProps png">
+				<a href="###" class="buyBtn fr png">道具商城</a>
+				<ul>
+					<li>
+						<div class="left fl">
+							<a href="###">
+								<img src="../images/props_1.png" />
+							</a>
+						</div>
+						<div class="right">
+							<p><a href="###" class="orange">负分清零</a></p>
+							<p>价格：<span>10元宝</span></p>
+							<p>赠送：<span>100万银子</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="left fl">
+							<a href="###">
+								<img src="../images/props_1.png" />
+							</a>
+						</div>
+						<div class="right">
+							<p><a href="###" class="orange">负分清零</a></p>
+							<p>价格：<span>10元宝</span></p>
+							<p>赠送：<span>100万银子</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="left fl">
+							<a href="###">
+								<img src="../images/props_1.png" />
+							</a>
+						</div>
+						<div class="right">
+							<p><a href="###" class="orange">负分清零</a></p>
+							<p>价格：<span>10元宝</span></p>
+							<p>赠送：<span>100万银子</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</form>
+<!-- 卡密充值End -->
+			
+<script type="text/x-tmpl" id="tmpl_card">
+	<div class="addCardPassword png">
+		<i class="orangeLabel png">卡密</i>
+		<div class="formRow">
+			<div class="formLeft di">
+				卡号：
+			</div>
+			<div class="formRight di">
+				<input type="text" class="mid dv" data-type="card_id"/>
+				<span></span>
+				<!--<span class="real dv"><i class="ico_16 i34"></i></span>
+				<span class="error dv"><i class="ico_16 i33"></i>卡号位数不对</span>-->
+			</div>
+		</div>
+		<div class="formRow">
+			<div class="formLeft di">
+				密码：
+			</div>
+			<div class="formRight di">
+				<input type="password" class="mid" data-type="card_id"/>
+				<span></span>
+			</div>
+		</div>
+		<div class="moveCard fr">
+			<a href="###" class="png" data-action="remove_card"></a>
+			<p>删除此卡</p>
+		</div>
+	</div>
+</script>
+<script type="text/javascript">
+$(function() {
+	var ui = {
+		$form_card: $('#form_card'),
+		$card_password: $('#card_password'),
+		$card_success: $('#card_success'),
+		$card_content: $('#card_content'),
+		$btn_addCard: $('#btn_addCard'),
+		$btn_next: $('#btn_next'),
+		$txt_account: $('#txt_account'),
+		$div_commonly_words: $('#div_commonly_words'),
+		$btn_commonly_words: $('#btn_commonly_words'),
+		$txt_message: $('#txt_message'),
+		$span_cards_success_content: $('#span_cards_success_content'),
+		$btn_charge_again: $('#btn_charge_again')
+	}
+
+	var oPage = {
+		init: function() {
+			this.view();
+			this.bindEvent();
+		},
+		view: function() {
+
+		},
+		bindEvent: function() {
+			var self = this;
+			$('body').on('click', function() {
+				ui.$div_commonly_words.hide();
+			})
+			// 常用语
+			ui.$btn_commonly_words.on('click', function() {
+				ui.$div_commonly_words.show();
+				return false;
+			});
+			ui.$div_commonly_words.on('click', 'li', function() {
+				var val = $(this).data('val');
+				ui.$txt_message.val(val);
+			})
+			// 增加一张卡
+			ui.$btn_addCard.on('click', function() {
+				var content = $('#tmpl_card').html();
+				ui.$btn_next.closest('div.nextBtn').before(content);
+			});
+			ui.$card_content.on('click', 'a', function() {
+				var $this = $(this),
+					action = $this.data('action');
+				if(action == 'remove_card') {
+					$this.closest('div.addCardPassword').remove();
+				}
+			});
+			// 账号
+			ui.$txt_account.on('blur', function() {
+				self.fValidAccount(true);
+			})
+			// 充值提交
+			ui.$btn_next.on('click', function() {
+				var $this = $(this);
+				if(!$this.data('ing')) {
+					$this.data('ing', true);
+					if(self.fValidForm()) {
+						self.fAjaxCardsSubmit();
+
+					}
+				}
+			});
+			// 再充一笔
+			ui.$btn_charge_again.on('click', function() {
+				self.fShowCardsContent();
+			})
+		},
+		fValidSuccess: function($obj) {
+			$obj.next('span').replaceWith('<span class="real dv"><i class="ico_16 i34"></i></span>');
+		},
+		fValidError: function($obj, content) {
+			$obj.next('span').replaceWith('<span class="error dv"><i class="ico_16 i33"></i>'+content+'</span>');
+		},
+		fValidWait: function($obj) {
+			$obj.next('span').hide();
+		},
+		fValidAccount: function(async) {
+			var b = true;
+			var val = ui.$txt_account.val();
+			if(val == '') {
+				this.fValidError(ui.$txt_account, '请输入账号');
+				b = false;
+			} else {
+				this.fValidWait(ui.$txt_account);
+				this.fAjaxAccount(async);
+			}
+			return b;
+		},
+		// 异步校验账号
+		fAjaxAccount: function(async) {
+			var b = false;
+			var bAsync = async == undefined ? true : async;
+			var self = this;
+            var url='?c=charge&a=checkAccount';
+            var data={account: ui.$txt_account.val()};
+            $.post(url,data,function(msg){
+                if(!msg.code){
+
+                }else{
+                    alert(msg)
+                }
+            },'json')
+			// $.ajax({
+			// 	type:'post',
+			// 	url:'XXX',
+			// 	data:{},
+			// 	async:bAsync,
+			// 	success:function(data) {
+			// 		if(data.code == 0) {
+			// 			self.fValidSuccess(ui.$txt_account);
+			// 			b = true;
+			// 		} else {
+			// 			self.fValidError(ui.$txt_account, '帐号不存在');
+			// 			b = false;
+			// 		}
+			// 	}
+			// });
+			b = true;	//调试
+			return b;
+		},
+		fValidCard: function() {
+			var b = true;
+			var $card_id = ui.$card_content.find('[data-type=card_id]'),
+				$card_pwd = ui.$card_content.find('[data-type=card_pwd]');
+			for(var i=0;i<$card_id.length;i++) {
+				var $id = $card_id.eq(i),
+					$pwd = $card_pwd.eq(i);
+				if($id.val() == '') {
+					this.fValidError($id, '请输入卡号');
+					b = false;
+				}
+				if($pwd.val() == '') {
+					this.fValidError($pwd, '请输入密码');
+					b = false;
+				}
+			}
+			return b;
+		},
+		fValidForm: function() {
+			return (this.fValidAccount(false) && this.fValidCard());
+		},
+		fAjaxCardsSubmit: function() {
+			var self = this;
+			ui.$form_card.ajaxSubmit({
+				clearForm:true,
+				success:function(data) {
+					if(data.code == 0) {
+						self.fShowCardsSuccess();
+					} else {
+						alert('充值失败');
+					}
+					ui.$btn_next.data('ing', false);
+				}
+			})
+			self.fShowCardsSuccess();  //调试
+		},
+		fShowCardsSuccess: function() {
+			var sHtml = '<span class="orange">账号（昵称）</span>已成功冲入<span class="orange">50</span>元宝';
+			ui.$span_cards_success_content.html(sHtml);
+			ui.$card_password.hide();
+			ui.$card_success.show();
+		},
+		fShowCardsContent: function() {
+			ui.$card_success.hide();
+			ui.$card_password.show();
+		}
+	}
+
+	oPage.init();
+})
+</script>
+
+</body>
+</html>

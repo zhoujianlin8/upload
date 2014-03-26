@@ -1,0 +1,33 @@
+﻿/* tabs */
+/*.tabs{
+	font-size: 13px;
+	border-radius:3px 3px 0 0;
+	box-shadow:inset 0 -1px 0 #c7dcec, inset 0 0 0 1px #fff;
+	height:38px; line-height:38px;
+	position:relative; overflow: hidden;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fafbfd), to(#f3f7fb));
+	-webkit-user-select: none;
+}
+.tabs .nav ul{ width:20000em; position: absolute; top: 0; left: 0;}
+.tabs .nav ul li{float:left; border-left:1px solid #fff; border-right:1px solid #c7dcec; padding:0 12px; cursor:pointer; height:37px;}
+.tabs .nav ul li:first-child{ border-radius:3px 0 0 0}
+.tabs .nav ul li.cur{ border-left:none;background:#fff; height: 38px; box-shadow:inset 0 2px 0 0 #f2f9ff; padding-left:13px;}
+.tabs .nav ul li .dropArrow{ display:none; vertical-align:-3px; margin:0 -5px 0 5px;}*/
+.tabs .nav i[class^="ico_"]{ margin-right: 5px; }
+
+.tabs .al,.tab .ar{ 
+	display:none;
+	position:absolute; top:0;
+	width:30px; height:32px;
+	padding-top:5px;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fafbfd), to(#f3f7fb));
+	border-bottom:1px solid #c7dcec;
+	text-align:center; 
+	cursor:pointer;
+}
+.tabs .al{ left:0; border-left:1px solid #fff; border-right:1px solid #c7dcec; }
+.tabs .ar{ right:0; border-right:1px solid #fff; border-left:1px solid #c7dcec; }
+
+.tabs .tabc {display:none !important;}
+.tabs .tabc.cur{display:block !important;}
+.tabs .tabc.flex.cur{display:-webkit-flex !important;}
